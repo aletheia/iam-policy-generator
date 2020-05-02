@@ -1,7 +1,7 @@
-language: nodejs
+language: node_js
 
-before_script:
-  - npm install
+node_js:
+  - '10'
 
 script:
   - npm run ci
