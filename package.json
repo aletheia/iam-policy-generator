@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A simple library to be used to generate IAM policies.",
   "main": "lib/index.js",
+  "files": ["lib/**/*"],
   "scripts": {
     "test": "jest .",
     "check": "gts check",
