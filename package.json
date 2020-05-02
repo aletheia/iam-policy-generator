@@ -1,0 +1,42 @@
+{
+  "name": "iam-policy-generator",
+  "version": "0.1.0",
+  "description": "A simple library to be used to generate IAM policies.",
+  "main": "lib/index.js",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "test": "jest .",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check",
+    "postinstall": "node ./lib/generator/generatePolicyEnums.js; tsc ./lib/generated/*.ts"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@aws-cdk/aws-iam": "^1.36.1",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.capitalize": "^4.2.1",
+    "lodash.foreach": "^4.5.0",
+    "lodash.map": "^4.6.0",
+    "lodash.snakecase": "^4.1.1",
+    "lodash.toupper": "^4.1.2",
+    "node-fetch": "^2.6.0",
+    "typescript": "~3.8.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/lodash.camelcase": "^4.3.6",
+    "@types/lodash.capitalize": "^4.2.6",
+    "@types/lodash.foreach": "^4.5.6",
+    "@types/lodash.snakecase": "^4.1.6",
+    "@types/lodash.toupper": "^4.1.6",
+    "@types/node": "^10.0.3",
+    "@types/node-fetch": "^2.5.7",
+    "gts": "^2.0.0"
+  }
+}
