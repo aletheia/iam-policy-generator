@@ -1,912 +1,230 @@
 export enum Service {
-Comprehend = 'comprehend'
+  Comprehend = 'comprehend',
+  Elasticfilesystem = 'elasticfilesystem',
+  Glue = 'glue',
+  Iotthingsgraph = 'iotthingsgraph',
+  Savingsplans = 'savingsplans',
+  Systemsmanager = 'ssm',
+  Sso = 'sso',
+  Iot = 'iot',
+  Migrationhub = 'mgh',
+  Lambda = 'lambda',
+  Dataexchange = 'dataexchange',
+  Machinelearning = 'machinelearning',
+  Guardduty = 'guardduty',
+  Eventbridge = 'events',
+  Lex = 'lex',
+  Resourceaccessmanager = 'ram',
+  Elementalmediaconnect = 'mediaconnect',
+  S3 = 's3',
+  Sagemaker = 'sagemaker',
+  Lakeformation = 'lakeformation',
+  Mobilehub = 'mobilehub',
+  Globalaccelerator = 'globalaccelerator',
+  Serverlessapplicationrepository = 'serverlessrepo',
+  Forecast = 'forecast',
+  Clouddirectory = 'clouddirectory',
+  Elementalmediatailor = 'mediatailor',
+  Route53 = 'route53',
+  Simpledb = 'sdb',
+  Securitytokenservice = 'sts',
+  Elementalmediapackage = 'mediapackage',
+  Managedapachecassandraservice = 'cassandra',
+  Athena = 'athena',
+  Marketplacemeteringservice = 'aws-marketplace',
+  Marketplaceprocurementsystemsintegration = 'aws-marketplace',
+  Marketplacecatalog = 'aws-marketplace',
+  Marketplaceimagebuildingservice = 'aws-marketplace',
+  Marketplaceentitlementservice = 'aws-marketplace',
+  Marketplace = 'aws-marketplace',
+  Privatemarketplace = 'aws-marketplace',
+  Pinpoint = 'mobiletargeting',
+  Sumerian = 'sumerian',
+  Autoscaling = 'autoscaling-plans',
+  Costandusagereport = 'cur',
+  Route53domains = 'route53domains',
+  Opsworks = 'opsworks',
+  Freertos = 'freertos',
+  Codedeploy = 'codedeploy',
+  Identityandaccessmanagement = 'iam',
+  Route53resolver = 'route53resolver',
+  Workmail = 'workmail',
+  Codebuild = 'codebuild',
+  Iotanalytics = 'iotanalytics',
+  Connect = 'connect',
+  Pinpointemailservice = 'ses',
+  Ses = 'ses',
+  Costexplorerservice = 'ce',
+  Cloudwatchsynthetics = 'synthetics',
+  Elasticinference = 'elastic-inference',
+  Deeplens = 'deeplens',
+  Rdsdataapi = 'rds-data',
+  Ssodirectory = 'sso-directory',
+  Appflow = 'appflow',
+  Trustedadvisor = 'trustedadvisor',
+  Config = 'config',
+  Rds = 'rds',
+  Simpleworkflowservice = 'swf',
+  Macie = 'macie',
+  Appsync = 'appsync',
+  Certificatemanager = 'acm',
+  Xray = 'xray',
+  Cloudfront = 'cloudfront',
+  Elasticcontainerserviceforkubernetes = 'eks',
+  Firewallmanager = 'fms',
+  Kinesis = 'kinesis',
+  Billing = 'aws-portal',
+  Directoryservice = 'ds',
+  Iotsitewise = 'iotsitewise',
+  Codestarnotifications = 'codestar-notifications',
+  Frauddetector = 'frauddetector',
+  Worklink = 'worklink',
+  Workspaces = 'workspaces',
+  Chime = 'chime',
+  Elasticache = 'elasticache',
+  Kinesisfirehose = 'firehose',
+  Mechanicalturk = 'mechanicalturk',
+  Storagegateway = 'storagegateway',
+  Elasticmapreduce = 'elasticmapreduce',
+  Batch = 'batch',
+  Iotevents = 'iotevents',
+  Cloudtrail = 'cloudtrail',
+  Dynamodb = 'dynamodb',
+  Elasticsearchservice = 'es',
+  Deepracer = 'deepracer',
+  Budgetservice = 'budgets',
+  Eventbridgeschemas = 'schemas',
+  Networkmanager = 'networkmanager',
+  Support = 'support',
+  Cognitoidentity = 'cognito-identity',
+  Polly = 'polly',
+  Appconfig = 'appconfig',
+  Licensemanager = 'license-manager',
+  Alexaforbusiness = 'a4b',
+  Certificatemanagerprivatecertificateauthority = 'acm-pca',
+  Stepfunctions = 'states',
+  Messagedeliveryservice = 'ec2messages',
+  Iotgreengrass = 'greengrass',
+  Redshift = 'redshift',
+  Workdocs = 'workdocs',
+  Marketplacemanagementportal = 'aws-marketplace-management',
+  Comprehendmedical = 'comprehendmedical',
+  Deepcomposer = 'deepcomposer',
+  Managedblockchain = 'managedblockchain',
+  Waf = 'waf',
+  Appstream20 = 'appstream',
+  Quicksight = 'quicksight',
+  Wafv2 = 'wafv2',
+  Workspacesapplicationmanager = 'wam',
+  Datalifecyclemanager = 'dlm',
+  Wellarchitectedtool = 'wellarchitected',
+  Connectorservice = 'awsconnector',
+  Kendra = 'kendra',
+  Lightsail = 'lightsail',
+  Backupstorage = 'backup-storage',
+  Cognitosync = 'cognito-sync',
+  Cloudsearch = 'cloudsearch',
+  Elastictranscoder = 'elastictranscoder',
+  Pricelist = 'pricing',
+  Backup = 'backup',
+  Mobileanalytics = 'mobileanalytics',
+  Iotdevicetester = 'iot-device-tester',
+  Databasemigrationservice = 'dms',
+  Sessionmanagermessagegatewayservice = 'ssmmessages',
+  Artifact = 'artifact',
+  Transcribe = 'transcribe',
+  Iqpermissions = 'iq-permission',
+  Elementalmediapackagevod = 'mediapackage-vod',
+  Devicefarm = 'devicefarm',
+  Groundstation = 'groundstation',
+  Codesigningforfreertos = 'signer',
+  Purchaseordersconsole = 'purchase-orders',
+  Resourcegroups = 'resource-groups',
+  Iq = 'iq',
+  Manageapigateway = 'apigateway',
+  Appmesh = 'appmesh',
+  Databasequerymetadataservice = 'dbqms',
+  Managedstreamingforkafka = 'kafka',
+  Codegurureviewer = 'codeguru-reviewer',
+  Pinpointsmsandvoiceservice = 'sms-voice',
+  Cloudwatch = 'cloudwatch',
+  Ec2autoscaling = 'autoscaling',
+  Snowball = 'snowball',
+  Shield = 'shield',
+  Secretsmanager = 'secretsmanager',
+  Applicationautoscaling = 'application-autoscaling',
+  Fsx = 'fsx',
+  Amplify = 'amplify',
+  Appmeshpreview = 'appmesh-preview',
+  Kinesisvideostreams = 'kinesisvideo',
+  Apigateway = 'execute-api',
+  Elementalmedialive = 'medialive',
+  Keymanagementservice = 'kms',
+  Cloudhsm = 'cloudhsm',
+  Codeguru = 'codeguru',
+  Ec2 = 'ec2',
+  Importexportdiskservice = 'importexport',
+  Datapipeline = 'datapipeline',
+  Servermigrationservice = 'sms',
+  Cloudformation = 'cloudformation',
+  Workmailmessageflow = 'workmailmessageflow',
+  Chatbot = 'chatbot',
+  Healthapisandnotifications = 'health',
+  Outposts = 'outposts',
+  Gamelift = 'gamelift',
+  Opsworksconfigurationmanagement = 'opsworks-cm',
+  Ec2instanceconnect = 'ec2-instance-connect',
+  Rdsiamauthentication = 'rds-db',
+  Applicationdiscovery = 'discovery',
+  Elasticblockstore = 'ebs',
+  Codecommit = 'codecommit',
+  Codeguruprofiler = 'codeguru-profiler',
+  Sns = 'sns',
+  Cognitouserpools = 'cognito-idp',
+  Elasticbeanstalk = 'elasticbeanstalk',
+  Cloudwatchapplicationinsights = 'applicationinsights',
+  Elasticloadbalancingv2 = 'elasticloadbalancing',
+  Elasticloadbalancing = 'elasticloadbalancing',
+  Translate = 'translate',
+  Wafregional = 'waf-regional',
+  Elasticcontainerservice = 'ecs',
+  Elasticcontainerregistry = 'ecr',
+  Dynamodbacceleratordax = 'dax',
+  Resourcegrouptaggingapi = 'tag',
+  Cloudwatchlogs = 'logs',
+  Servicecatalog = 'servicecatalog',
+  Mq = 'mq',
+  Personalize = 'personalize',
+  Cloud9 = 'cloud9',
+  Detective = 'detective',
+  Transferforsftp = 'transfer',
+  Iamaccessanalyzer = 'access-analyzer',
+  Textract = 'textract',
+  Applicationdiscoveryarsenal = 'arsenal',
+  Groundtruthlabeling = 'groundtruthlabeling',
+  Elementalmediastore = 'mediastore',
+  Iot1click = 'iot1click',
+  Codepipeline = 'codepipeline',
+  Securityhub = 'securityhub',
+  Ec2imagebuilder = 'imagebuilder',
+  Sqs = 'sqs',
+  Cloudmap = 'servicediscovery',
+  Computeoptimizer = 'compute-optimizer',
+  Glacier = 'glacier',
+  Rekognition = 'rekognition',
+  Launchwizard = 'launchwizard',
+  Elementalmediaconvert = 'mediaconvert',
+  Servicequotas = 'servicequotas',
+  Inspector = 'inspector',
+  Robomaker = 'robomaker',
+  Qldb = 'qldb',
+  Codestar = 'codestar',
+  Directconnect = 'directconnect',
+  Neptune = 'neptune-db',
+  Datasync = 'datasync',
+  Organizations = 'organizations',
+  Performanceinsights = 'pi',
+  Kinesisanalyticsv2 = 'kinesisanalytics',
+  Kinesisanalytics = 'kinesisanalytics',
+  Accounts = 'account',
 }
-
-export enum Service {
-Elasticfilesystem = 'elasticfilesystem'
-}
-
-export enum Service {
-Glue = 'glue'
-}
-
-export enum Service {
-Iotthingsgraph = 'iotthingsgraph'
-}
-
-export enum Service {
-Savingsplans = 'savingsplans'
-}
-
-export enum Service {
-Systemsmanager = 'ssm'
-}
-
-export enum Service {
-Sso = 'sso'
-}
-
-export enum Service {
-Iot = 'iot'
-}
-
-export enum Service {
-Migrationhub = 'mgh'
-}
-
-export enum Service {
-Lambda = 'lambda'
-}
-
-export enum Service {
-Dataexchange = 'dataexchange'
-}
-
-export enum Service {
-Machinelearning = 'machinelearning'
-}
-
-export enum Service {
-Guardduty = 'guardduty'
-}
-
-export enum Service {
-Eventbridge = 'events'
-}
-
-export enum Service {
-Lex = 'lex'
-}
-
-export enum Service {
-Resourceaccessmanager = 'ram'
-}
-
-export enum Service {
-Elementalmediaconnect = 'mediaconnect'
-}
-
-export enum Service {
-S3 = 's3'
-}
-
-export enum Service {
-Sagemaker = 'sagemaker'
-}
-
-export enum Service {
-Lakeformation = 'lakeformation'
-}
-
-export enum Service {
-Mobilehub = 'mobilehub'
-}
-
-export enum Service {
-Globalaccelerator = 'globalaccelerator'
-}
-
-export enum Service {
-Serverlessapplicationrepository = 'serverlessrepo'
-}
-
-export enum Service {
-Forecast = 'forecast'
-}
-
-export enum Service {
-Clouddirectory = 'clouddirectory'
-}
-
-export enum Service {
-Elementalmediatailor = 'mediatailor'
-}
-
-export enum Service {
-Route53 = 'route53'
-}
-
-export enum Service {
-Simpledb = 'sdb'
-}
-
-export enum Service {
-Securitytokenservice = 'sts'
-}
-
-export enum Service {
-Elementalmediapackage = 'mediapackage'
-}
-
-export enum Service {
-Managedapachecassandraservice = 'cassandra'
-}
-
-export enum Service {
-Athena = 'athena'
-}
-
-export enum Service {
-Marketplacemeteringservice = 'aws-marketplace'
-}
-
-export enum Service {
-Marketplaceprocurementsystemsintegration = 'aws-marketplace'
-}
-
-export enum Service {
-Marketplacecatalog = 'aws-marketplace'
-}
-
-export enum Service {
-Marketplaceimagebuildingservice = 'aws-marketplace'
-}
-
-export enum Service {
-Marketplaceentitlementservice = 'aws-marketplace'
-}
-
-export enum Service {
-Marketplace = 'aws-marketplace'
-}
-
-export enum Service {
-Privatemarketplace = 'aws-marketplace'
-}
-
-export enum Service {
-Pinpoint = 'mobiletargeting'
-}
-
-export enum Service {
-Sumerian = 'sumerian'
-}
-
-export enum Service {
-Autoscaling = 'autoscaling-plans'
-}
-
-export enum Service {
-Costandusagereport = 'cur'
-}
-
-export enum Service {
-Route53domains = 'route53domains'
-}
-
-export enum Service {
-Opsworks = 'opsworks'
-}
-
-export enum Service {
-Freertos = 'freertos'
-}
-
-export enum Service {
-Codedeploy = 'codedeploy'
-}
-
-export enum Service {
-Identityandaccessmanagement = 'iam'
-}
-
-export enum Service {
-Route53resolver = 'route53resolver'
-}
-
-export enum Service {
-Workmail = 'workmail'
-}
-
-export enum Service {
-Codebuild = 'codebuild'
-}
-
-export enum Service {
-Iotanalytics = 'iotanalytics'
-}
-
-export enum Service {
-Connect = 'connect'
-}
-
-export enum Service {
-Pinpointemailservice = 'ses'
-}
-
-export enum Service {
-Ses = 'ses'
-}
-
-export enum Service {
-Costexplorerservice = 'ce'
-}
-
-export enum Service {
-Cloudwatchsynthetics = 'synthetics'
-}
-
-export enum Service {
-Elasticinference = 'elastic-inference'
-}
-
-export enum Service {
-Deeplens = 'deeplens'
-}
-
-export enum Service {
-Rdsdataapi = 'rds-data'
-}
-
-export enum Service {
-Ssodirectory = 'sso-directory'
-}
-
-export enum Service {
-Appflow = 'appflow'
-}
-
-export enum Service {
-Trustedadvisor = 'trustedadvisor'
-}
-
-export enum Service {
-Config = 'config'
-}
-
-export enum Service {
-Rds = 'rds'
-}
-
-export enum Service {
-Simpleworkflowservice = 'swf'
-}
-
-export enum Service {
-Macie = 'macie'
-}
-
-export enum Service {
-Appsync = 'appsync'
-}
-
-export enum Service {
-Certificatemanager = 'acm'
-}
-
-export enum Service {
-Xray = 'xray'
-}
-
-export enum Service {
-Cloudfront = 'cloudfront'
-}
-
-export enum Service {
-Elasticcontainerserviceforkubernetes = 'eks'
-}
-
-export enum Service {
-Firewallmanager = 'fms'
-}
-
-export enum Service {
-Kinesis = 'kinesis'
-}
-
-export enum Service {
-Billing = 'aws-portal'
-}
-
-export enum Service {
-Directoryservice = 'ds'
-}
-
-export enum Service {
-Iotsitewise = 'iotsitewise'
-}
-
-export enum Service {
-Codestarnotifications = 'codestar-notifications'
-}
-
-export enum Service {
-Frauddetector = 'frauddetector'
-}
-
-export enum Service {
-Worklink = 'worklink'
-}
-
-export enum Service {
-Workspaces = 'workspaces'
-}
-
-export enum Service {
-Chime = 'chime'
-}
-
-export enum Service {
-Elasticache = 'elasticache'
-}
-
-export enum Service {
-Kinesisfirehose = 'firehose'
-}
-
-export enum Service {
-Mechanicalturk = 'mechanicalturk'
-}
-
-export enum Service {
-Storagegateway = 'storagegateway'
-}
-
-export enum Service {
-Elasticmapreduce = 'elasticmapreduce'
-}
-
-export enum Service {
-Batch = 'batch'
-}
-
-export enum Service {
-Iotevents = 'iotevents'
-}
-
-export enum Service {
-Cloudtrail = 'cloudtrail'
-}
-
-export enum Service {
-Dynamodb = 'dynamodb'
-}
-
-export enum Service {
-Elasticsearchservice = 'es'
-}
-
-export enum Service {
-Deepracer = 'deepracer'
-}
-
-export enum Service {
-Budgetservice = 'budgets'
-}
-
-export enum Service {
-Eventbridgeschemas = 'schemas'
-}
-
-export enum Service {
-Networkmanager = 'networkmanager'
-}
-
-export enum Service {
-Support = 'support'
-}
-
-export enum Service {
-Cognitoidentity = 'cognito-identity'
-}
-
-export enum Service {
-Polly = 'polly'
-}
-
-export enum Service {
-Appconfig = 'appconfig'
-}
-
-export enum Service {
-Licensemanager = 'license-manager'
-}
-
-export enum Service {
-Alexaforbusiness = 'a4b'
-}
-
-export enum Service {
-Certificatemanagerprivatecertificateauthority = 'acm-pca'
-}
-
-export enum Service {
-Stepfunctions = 'states'
-}
-
-export enum Service {
-Messagedeliveryservice = 'ec2messages'
-}
-
-export enum Service {
-Iotgreengrass = 'greengrass'
-}
-
-export enum Service {
-Redshift = 'redshift'
-}
-
-export enum Service {
-Workdocs = 'workdocs'
-}
-
-export enum Service {
-Marketplacemanagementportal = 'aws-marketplace-management'
-}
-
-export enum Service {
-Comprehendmedical = 'comprehendmedical'
-}
-
-export enum Service {
-Deepcomposer = 'deepcomposer'
-}
-
-export enum Service {
-Managedblockchain = 'managedblockchain'
-}
-
-export enum Service {
-Waf = 'waf'
-}
-
-export enum Service {
-Appstream20 = 'appstream'
-}
-
-export enum Service {
-Quicksight = 'quicksight'
-}
-
-export enum Service {
-Wafv2 = 'wafv2'
-}
-
-export enum Service {
-Workspacesapplicationmanager = 'wam'
-}
-
-export enum Service {
-Datalifecyclemanager = 'dlm'
-}
-
-export enum Service {
-Wellarchitectedtool = 'wellarchitected'
-}
-
-export enum Service {
-Connectorservice = 'awsconnector'
-}
-
-export enum Service {
-Kendra = 'kendra'
-}
-
-export enum Service {
-Lightsail = 'lightsail'
-}
-
-export enum Service {
-Backupstorage = 'backup-storage'
-}
-
-export enum Service {
-Cognitosync = 'cognito-sync'
-}
-
-export enum Service {
-Cloudsearch = 'cloudsearch'
-}
-
-export enum Service {
-Elastictranscoder = 'elastictranscoder'
-}
-
-export enum Service {
-Pricelist = 'pricing'
-}
-
-export enum Service {
-Backup = 'backup'
-}
-
-export enum Service {
-Mobileanalytics = 'mobileanalytics'
-}
-
-export enum Service {
-Iotdevicetester = 'iot-device-tester'
-}
-
-export enum Service {
-Databasemigrationservice = 'dms'
-}
-
-export enum Service {
-Sessionmanagermessagegatewayservice = 'ssmmessages'
-}
-
-export enum Service {
-Artifact = 'artifact'
-}
-
-export enum Service {
-Transcribe = 'transcribe'
-}
-
-export enum Service {
-Iqpermissions = 'iq-permission'
-}
-
-export enum Service {
-Elementalmediapackagevod = 'mediapackage-vod'
-}
-
-export enum Service {
-Devicefarm = 'devicefarm'
-}
-
-export enum Service {
-Groundstation = 'groundstation'
-}
-
-export enum Service {
-Codesigningforfreertos = 'signer'
-}
-
-export enum Service {
-Purchaseordersconsole = 'purchase-orders'
-}
-
-export enum Service {
-Resourcegroups = 'resource-groups'
-}
-
-export enum Service {
-Iq = 'iq'
-}
-
-export enum Service {
-Manageapigateway = 'apigateway'
-}
-
-export enum Service {
-Appmesh = 'appmesh'
-}
-
-export enum Service {
-Databasequerymetadataservice = 'dbqms'
-}
-
-export enum Service {
-Managedstreamingforkafka = 'kafka'
-}
-
-export enum Service {
-Codegurureviewer = 'codeguru-reviewer'
-}
-
-export enum Service {
-Pinpointsmsandvoiceservice = 'sms-voice'
-}
-
-export enum Service {
-Cloudwatch = 'cloudwatch'
-}
-
-export enum Service {
-Ec2autoscaling = 'autoscaling'
-}
-
-export enum Service {
-Snowball = 'snowball'
-}
-
-export enum Service {
-Shield = 'shield'
-}
-
-export enum Service {
-Secretsmanager = 'secretsmanager'
-}
-
-export enum Service {
-Applicationautoscaling = 'application-autoscaling'
-}
-
-export enum Service {
-Fsx = 'fsx'
-}
-
-export enum Service {
-Amplify = 'amplify'
-}
-
-export enum Service {
-Appmeshpreview = 'appmesh-preview'
-}
-
-export enum Service {
-Kinesisvideostreams = 'kinesisvideo'
-}
-
-export enum Service {
-Apigateway = 'execute-api'
-}
-
-export enum Service {
-Elementalmedialive = 'medialive'
-}
-
-export enum Service {
-Keymanagementservice = 'kms'
-}
-
-export enum Service {
-Cloudhsm = 'cloudhsm'
-}
-
-export enum Service {
-Codeguru = 'codeguru'
-}
-
-export enum Service {
-Ec2 = 'ec2'
-}
-
-export enum Service {
-Importexportdiskservice = 'importexport'
-}
-
-export enum Service {
-Datapipeline = 'datapipeline'
-}
-
-export enum Service {
-Servermigrationservice = 'sms'
-}
-
-export enum Service {
-Cloudformation = 'cloudformation'
-}
-
-export enum Service {
-Workmailmessageflow = 'workmailmessageflow'
-}
-
-export enum Service {
-Chatbot = 'chatbot'
-}
-
-export enum Service {
-Healthapisandnotifications = 'health'
-}
-
-export enum Service {
-Outposts = 'outposts'
-}
-
-export enum Service {
-Gamelift = 'gamelift'
-}
-
-export enum Service {
-Opsworksconfigurationmanagement = 'opsworks-cm'
-}
-
-export enum Service {
-Ec2instanceconnect = 'ec2-instance-connect'
-}
-
-export enum Service {
-Rdsiamauthentication = 'rds-db'
-}
-
-export enum Service {
-Applicationdiscovery = 'discovery'
-}
-
-export enum Service {
-Elasticblockstore = 'ebs'
-}
-
-export enum Service {
-Codecommit = 'codecommit'
-}
-
-export enum Service {
-Codeguruprofiler = 'codeguru-profiler'
-}
-
-export enum Service {
-Sns = 'sns'
-}
-
-export enum Service {
-Cognitouserpools = 'cognito-idp'
-}
-
-export enum Service {
-Elasticbeanstalk = 'elasticbeanstalk'
-}
-
-export enum Service {
-Cloudwatchapplicationinsights = 'applicationinsights'
-}
-
-export enum Service {
-Elasticloadbalancingv2 = 'elasticloadbalancing'
-}
-
-export enum Service {
-Elasticloadbalancing = 'elasticloadbalancing'
-}
-
-export enum Service {
-Translate = 'translate'
-}
-
-export enum Service {
-Wafregional = 'waf-regional'
-}
-
-export enum Service {
-Elasticcontainerservice = 'ecs'
-}
-
-export enum Service {
-Elasticcontainerregistry = 'ecr'
-}
-
-export enum Service {
-Dynamodbacceleratordax = 'dax'
-}
-
-export enum Service {
-Resourcegrouptaggingapi = 'tag'
-}
-
-export enum Service {
-Cloudwatchlogs = 'logs'
-}
-
-export enum Service {
-Servicecatalog = 'servicecatalog'
-}
-
-export enum Service {
-Mq = 'mq'
-}
-
-export enum Service {
-Personalize = 'personalize'
-}
-
-export enum Service {
-Cloud9 = 'cloud9'
-}
-
-export enum Service {
-Detective = 'detective'
-}
-
-export enum Service {
-Transferforsftp = 'transfer'
-}
-
-export enum Service {
-Iamaccessanalyzer = 'access-analyzer'
-}
-
-export enum Service {
-Textract = 'textract'
-}
-
-export enum Service {
-Applicationdiscoveryarsenal = 'arsenal'
-}
-
-export enum Service {
-Groundtruthlabeling = 'groundtruthlabeling'
-}
-
-export enum Service {
-Elementalmediastore = 'mediastore'
-}
-
-export enum Service {
-Iot1click = 'iot1click'
-}
-
-export enum Service {
-Codepipeline = 'codepipeline'
-}
-
-export enum Service {
-Securityhub = 'securityhub'
-}
-
-export enum Service {
-Ec2imagebuilder = 'imagebuilder'
-}
-
-export enum Service {
-Sqs = 'sqs'
-}
-
-export enum Service {
-Cloudmap = 'servicediscovery'
-}
-
-export enum Service {
-Computeoptimizer = 'compute-optimizer'
-}
-
-export enum Service {
-Glacier = 'glacier'
-}
-
-export enum Service {
-Rekognition = 'rekognition'
-}
-
-export enum Service {
-Launchwizard = 'launchwizard'
-}
-
-export enum Service {
-Elementalmediaconvert = 'mediaconvert'
-}
-
-export enum Service {
-Servicequotas = 'servicequotas'
-}
-
-export enum Service {
-Inspector = 'inspector'
-}
-
-export enum Service {
-Robomaker = 'robomaker'
-}
-
-export enum Service {
-Qldb = 'qldb'
-}
-
-export enum Service {
-Codestar = 'codestar'
-}
-
-export enum Service {
-Directconnect = 'directconnect'
-}
-
-export enum Service {
-Neptune = 'neptune-db'
-}
-
-export enum Service {
-Datasync = 'datasync'
-}
-
-export enum Service {
-Organizations = 'organizations'
-}
-
-export enum Service {
-Performanceinsights = 'pi'
-}
-
-export enum Service {
-Kinesisanalyticsv2 = 'kinesisanalytics'
-}
-
-export enum Service {
-Kinesisanalytics = 'kinesisanalytics'
-}
-
-export enum Service {
-Accounts = 'account'
-}
-

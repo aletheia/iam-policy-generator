@@ -29,6 +29,8 @@ const retrievePolicyList = async (logger: Logger) => {
   writeFileSync(POLICY_JSON, JSON.stringify(policyJson, null, 4));
 
   let serviceEnumString = '';
+  serviceEnumString += 'export enum Service {\n';
+
   let policyEnumString = '';
   foreach(policyJson.serviceMap, (val: AWSServicePolicy, key: string) => {
     const service = capitalize(
@@ -36,18 +38,17 @@ const retrievePolicyList = async (logger: Logger) => {
     );
 
     const serviceString = val.StringPrefix;
-    serviceEnumString += 'export enum Service {\n';
-    serviceEnumString += `${service} = '${serviceString}'\n`;
-    serviceEnumString += '}\n\n';
+    serviceEnumString += `  ${service} = '${serviceString}',\n`;
 
     policyEnumString += `export enum ${service} {\n`;
     const res = val.Actions.map((action: string) => {
       const actionName = toUpper(snakeCase(action));
-      return `${actionName} = '${action}'`;
+      return `  ${actionName} = '${action}'`;
     }).join(',\n');
     policyEnumString += res + '\n';
     policyEnumString += '}\n\n';
   });
+  serviceEnumString += '}\n';
   logger.info('Generating TS file containing Supported IAM Services enum.');
   writeFileSync(SERVICES_ENUM_FILE, serviceEnumString);
 
