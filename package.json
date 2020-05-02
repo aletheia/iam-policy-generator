@@ -3,19 +3,30 @@
   "version": "0.1.0",
   "description": "A simple library to be used to generate IAM policies.",
   "main": "lib/index.js",
-  "files": ["lib/**/*"],
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "test": "jest .",
     "check": "gts check",
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
+    "generate": "npx ts-node ./src/generator/generatePolicyEnums.ts && npm run fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check",
-    "postinstall": "node ./lib/generator/generatePolicyEnums.js; tsc ./lib/generated/*.ts"
+    "postinstall": "node ./lib/generator/generatePolicyEnums.js; tsc ./lib/generated/*.ts",
+    "prepublish": "npm run clean && npm run check && npm run compile"
   },
-  "author": "",
+  "author": {
+    "name": "Luca Bianchi",
+    "url": "https://github.com/aletheia"
+  },
+  "repository": {
+    "url": "https://github.com/aletheia/iam-policy-generator.git"
+  },
   "license": "Apache-2.0",
   "dependencies": {
     "@aws-cdk/aws-iam": "^1.36.1",
