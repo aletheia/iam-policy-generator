@@ -6,44 +6,48 @@ This project goal is to offer simple code handlers, so developers won't have to 
 
 Actually it depends on ``@aws-cdk/aws-iam` package because it offers the
 
-### Getting Started 
-Install the library through 
+## Getting Started
 
-#### Add package from NPM or Yarn
+Install the library through
 
-##### NPM
+### Add package from NPM or Yarn
+
+#### NPM
 
 ```bash
 npm i iam-policy-generator
 ```
 
-##### Yarn
+#### Yarn
 
 ```bash
 yarn add iam-policy-generator
 ```
 
-#### Use PolicyGenerator and helpers in your code
+### Use PolicyGenerator and helpers in your code
+
 Import the package in your source file and instantiate a new **PolicyGenerator** class and API and Service which can be used as _enums_ (typescript) or _constants_ (javascript)
 
 ```javascript
-const { PolicyGenerator, API, Service } = require('iam-policy-generator');
+const {PolicyGenerator, API, Service} = require('iam-policy-generator');
 
 // your code here
 
 const generator = new PolicyGenerator(Service.S3);
 generator.addAction(API.S3.LIST_BUCKET);
 generator.addAction(API.S3.PUT_OBJECT);
-
 ```
 
-#### Use a custom PolicyStatement generator in your CDK code
+### Use a custom PolicyStatement generator in your CDK code
 
 ```javascript
-
 // other CDK imports
 
-const {PolicyStatementGenerator, API, Service} = require('iam-policy-generator');
+const {
+  PolicyStatementGenerator,
+  API,
+  Service,
+} = require('iam-policy-generator');
 
 // your code here
 
@@ -55,5 +59,8 @@ clientListFunction.addToRolePolicy(
     actionApis: [API.S3.PUT_OBJECT, API.S3.LIST_BUCKET],
   }).build()
 );
-
 ```
+
+## License
+
+This IAM Policy Generator library is distributed under the [MIT License](https://opensource.org/licenses/MIT)
