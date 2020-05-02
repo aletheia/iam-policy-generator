@@ -1,6 +1,8 @@
 # AWS IAM Policy Generator
 
 [![npm version](https://badge.fury.io/js/iam-policy-generator.svg)](https://badge.fury.io/js/iam-policy-generator)
+[![Build Status](https://travis-ci.com/aletheia/iam-policy-generator.svg?branch=master)](https://travis-ci.com/aletheia/iam-policy-generator)
+![David](https://img.shields.io/david/aletheia/iam-policy-generator)
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
 > A simple NodeJS/Typescript library to generate IAM Policy Actions Statements, depending on selected service.
