@@ -36,6 +36,11 @@ export class PolicyFactory {
     return this;
   }
 
+  addResources(resources: string[]) {
+    this.resources.concat(resources);
+    return this;
+  }
+
   addAction(action: string) {
     this.actions.push(action);
     return this;
