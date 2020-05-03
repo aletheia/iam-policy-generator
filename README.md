@@ -1,4 +1,4 @@
-# AWS IAM Policy Generator
+# AWS IAM Policy Generator for AWS CDK
 
 [![npm version](https://badge.fury.io/js/iam-policy-generator.svg)](https://badge.fury.io/js/iam-policy-generator)
 [![Build Status](https://travis-ci.com/aletheia/iam-policy-generator.svg?branch=master)](https://travis-ci.com/aletheia/iam-policy-generator)
@@ -7,7 +7,7 @@
 
 > A simple NodeJS/Typescript library to generate IAM Policy Actions Statements, depending on selected service.
 
-Remembering IAM policy actions is nearly impossible and sticking to the documentation is time consuming. This library provides a set of predefined constants to be used with any IDE intellisense for autocompletion and a factory class that builds a AWS CDK PolicyStatement with ease.
+Remembering IAM policy actions is nearly impossible and sticking to the documentation is time consuming. This library provides a set of predefined constants to be used with any IDE intellisense for autocompletion and a factory class that builds a [AWS CDK PolicyStatement](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-iam.PolicyStatement.html) with ease.
 
 This project goal is to offer simple code handlers, so developers won't have to remember al the complex syntax. This library primary intention is to be used as an helper when writing AWS CDK stack scripts, but it can be used also as a standalone utility in any script.
 
