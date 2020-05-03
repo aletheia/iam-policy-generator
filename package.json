@@ -16,7 +16,7 @@
     "ci": "npm run clean && npm install && npm test",
     "generate": "npx ts-node ./src/generator/generatePolicyEnums.ts && npm run fix",
     "prepare": "npm run compile",
-    "postinstalloo": "node ./lib/generator/generatePolicyEnums.js; tsc ./lib/generated/*.ts",
+    "postinstall": "npm run compile && node ./lib/generator/generatePolicyEnums.js; tsc ./lib/generated/*.ts",
     "prepublish": "npm run clean && npm run check && npm run compile"
   },
   "author": {
