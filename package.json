@@ -12,7 +12,7 @@
     "check": "gts check",
     "clean": "gts clean",
     "compile": "tsc",
-    "fix": "gts fix",
+    "fix": "npm run clean && gts fix",
     "ci": "npm run clean && npm install && npm test",
     "generate": "npx ts-node ./src/generator/PolicyGenerator.ts && npm run fix",
     "prepare": "npm run compile",
