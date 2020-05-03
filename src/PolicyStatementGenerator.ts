@@ -1,22 +1,13 @@
-import {PolicyStatement} from '@aws-cdk/aws-iam';
-import {PolicyGenerator, Effect} from './PolicyGenerator';
-
-export interface PolicyStatementGeneratorProps {
-  service: string;
-  effect?: Effect;
-  resources?: string[];
-  actionApis?: string[];
-}
+import {PolicyStatement, Effect as CdkIamEffect} from '@aws-cdk/aws-iam';
+import {PolicyGenerator, PolicyGeneratorProps} from './PolicyGenerator';
 
 export class PolicyStatementGenerator extends PolicyGenerator {
-  constructor(props: PolicyStatementGeneratorProps) {
-    super(props.service, props.effect, props.resources, props.actionApis);
-  }
-  setEffect(effect: Effect) {
-    this.effect = effect;
+  constructor(props: PolicyGeneratorProps) {
+    super(props);
   }
   build() {
-    const iamEffect: Effect = Effect[this.effect! as keyof typeof Effect];
+    const iamEffect: CdkIamEffect =
+      CdkIamEffect[this.effect! as keyof typeof CdkIamEffect];
     return new PolicyStatement({
       effect: iamEffect,
       resources: this.resources,
