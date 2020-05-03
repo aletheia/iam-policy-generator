@@ -51,7 +51,6 @@ export enum COMPREHEND {
   UNTAG_RESOURCE = 'comprehend:UntagResource',
   UPDATE_ENDPOINT = 'comprehend:UpdateEndpoint',
 }
-
 export enum ELASTIC_FILE_SYSTEM {
   BACKUP = 'elasticfilesystem:Backup',
   CLIENT_MOUNT = 'elasticfilesystem:ClientMount',
@@ -82,7 +81,6 @@ export enum ELASTIC_FILE_SYSTEM {
   UNTAG_RESOURCE = 'elasticfilesystem:UntagResource',
   UPDATE_FILE_SYSTEM = 'elasticfilesystem:UpdateFileSystem',
 }
-
 export enum GLUE {
   BATCH_CREATE_PARTITION = 'glue:BatchCreatePartition',
   BATCH_DELETE_CONNECTION = 'glue:BatchDeleteConnection',
@@ -210,7 +208,6 @@ export enum GLUE {
   UPDATE_WORKFLOW = 'glue:UpdateWorkflow',
   USE_ML_TRANSFORMS = 'glue:UseMLTransforms',
 }
-
 export enum IOT_THINGS_GRAPH {
   ASSOCIATE_ENTITY_TO_THING = 'iotthingsgraph:AssociateEntityToThing',
   CREATE_FLOW_TEMPLATE = 'iotthingsgraph:CreateFlowTemplate',
@@ -248,7 +245,6 @@ export enum IOT_THINGS_GRAPH {
   UPDATE_SYSTEM_TEMPLATE = 'iotthingsgraph:UpdateSystemTemplate',
   UPLOAD_ENTITY_DEFINITIONS = 'iotthingsgraph:UploadEntityDefinitions',
 }
-
 export enum SAVINGS_PLANS {
   CREATE_SAVINGS_PLAN = 'savingsplans:CreateSavingsPlan',
   DESCRIBE_SAVINGS_PLAN_RATES = 'savingsplans:DescribeSavingsPlanRates',
@@ -259,7 +255,6 @@ export enum SAVINGS_PLANS {
   TAG_RESOURCE = 'savingsplans:TagResource',
   UNTAG_RESOURCE = 'savingsplans:UntagResource',
 }
-
 export enum SYSTEMS_MANAGER {
   ADD_TAGS_TO_RESOURCE = 'ssm:AddTagsToResource',
   CANCEL_COMMAND = 'ssm:CancelCommand',
@@ -390,7 +385,6 @@ export enum SYSTEMS_MANAGER {
   UPDATE_RESOURCE_DATA_SYNC = 'ssm:UpdateResourceDataSync',
   UPDATE_SERVICE_SETTING = 'ssm:UpdateServiceSetting',
 }
-
 export enum SSO {
   ASSOCIATE_DIRECTORY = 'sso:AssociateDirectory',
   ASSOCIATE_PROFILE = 'sso:AssociateProfile',
@@ -447,7 +441,6 @@ export enum SSO {
   UPDATE_SSO_CONFIGURATION = 'sso:UpdateSSOConfiguration',
   UPDATE_TRUST = 'sso:UpdateTrust',
 }
-
 export enum IOT {
   ACCEPT_CERTIFICATE_TRANSFER = 'iot:AcceptCertificateTransfer',
   ADD_THING_TO_BILLING_GROUP = 'iot:AddThingToBillingGroup',
@@ -644,7 +637,6 @@ export enum IOT {
   UPDATE_THING_SHADOW = 'iot:UpdateThingShadow',
   VALIDATE_SECURITY_PROFILE_BEHAVIORS = 'iot:ValidateSecurityProfileBehaviors',
 }
-
 export enum MIGRATION_HUB {
   ASSOCIATE_CREATED_ARTIFACT = 'mgh:AssociateCreatedArtifact',
   ASSOCIATE_DISCOVERED_RESOURCE = 'mgh:AssociateDiscoveredResource',
@@ -666,7 +658,6 @@ export enum MIGRATION_HUB {
   NOTIFY_MIGRATION_TASK_STATE = 'mgh:NotifyMigrationTaskState',
   PUT_RESOURCE_ATTRIBUTES = 'mgh:PutResourceAttributes',
 }
-
 export enum LAMBDA {
   ADD_LAYER_VERSION_PERMISSION = 'lambda:AddLayerVersionPermission',
   ADD_PERMISSION = 'lambda:AddPermission',
@@ -720,7 +711,6 @@ export enum LAMBDA {
   UPDATE_FUNCTION_CONFIGURATION = 'lambda:UpdateFunctionConfiguration',
   UPDATE_FUNCTION_EVENT_INVOKE_CONFIG = 'lambda:UpdateFunctionEventInvokeConfig',
 }
-
 export enum DATA_EXCHANGE {
   CANCEL_JOB = 'dataexchange:CancelJob',
   CREATE_ASSET = 'dataexchange:CreateAsset',
@@ -746,7 +736,6 @@ export enum DATA_EXCHANGE {
   UPDATE_DATA_SET = 'dataexchange:UpdateDataSet',
   UPDATE_REVISION = 'dataexchange:UpdateRevision',
 }
-
 export enum MACHINE_LEARNING {
   ADD_TAGS = 'machinelearning:AddTags',
   CREATE_BATCH_PREDICTION = 'machinelearning:CreateBatchPrediction',
@@ -777,7 +766,6 @@ export enum MACHINE_LEARNING {
   UPDATE_EVALUATION = 'machinelearning:UpdateEvaluation',
   UPDATE_ML_MODEL = 'machinelearning:UpdateMLModel',
 }
-
 export enum GUARDDUTY {
   ACCEPT_INVITATION = 'guardduty:AcceptInvitation',
   ARCHIVE_FINDINGS = 'guardduty:ArchiveFindings',
@@ -829,7 +817,6 @@ export enum GUARDDUTY {
   UPDATE_PUBLISHING_DESTINATION = 'guardduty:UpdatePublishingDestination',
   UPDATE_THREAT_INTEL_SET = 'guardduty:UpdateThreatIntelSet',
 }
-
 export enum EVENTBRIDGE {
   ACTIVATE_EVENT_SOURCE = 'events:ActivateEventSource',
   CREATE_EVENT_BUS = 'events:CreateEventBus',
@@ -863,7 +850,6 @@ export enum EVENTBRIDGE {
   TEST_EVENT_PATTERN = 'events:TestEventPattern',
   UNTAG_RESOURCE = 'events:UntagResource',
 }
-
 export enum LEX {
   CREATE_BOT_VERSION = 'lex:CreateBotVersion',
   CREATE_INTENT_VERSION = 'lex:CreateIntentVersion',
@@ -910,7 +896,6 @@ export enum LEX {
   TAG_RESOURCE = 'lex:TagResource',
   UNTAG_RESOURCE = 'lex:UntagResource',
 }
-
 export enum RESOURCE_ACCESS_MANAGER {
   ACCEPT_RESOURCE_SHARE_INVITATION = 'ram:AcceptResourceShareInvitation',
   ASSOCIATE_RESOURCE_SHARE = 'ram:AssociateResourceShare',
@@ -935,7 +920,6 @@ export enum RESOURCE_ACCESS_MANAGER {
   UNTAG_RESOURCE = 'ram:UntagResource',
   UPDATE_RESOURCE_SHARE = 'ram:UpdateResourceShare',
 }
-
 export enum ELEMENTAL_MEDIACONNECT {
   ADD_FLOW_OUTPUTS = 'mediaconnect:AddFlowOutputs',
   CREATE_FLOW = 'mediaconnect:CreateFlow',
@@ -952,7 +936,6 @@ export enum ELEMENTAL_MEDIACONNECT {
   UPDATE_FLOW_OUTPUT = 'mediaconnect:UpdateFlowOutput',
   UPDATE_FLOW_SOURCE = 'mediaconnect:UpdateFlowSource',
 }
-
 export enum S3 {
   ABORT_MULTIPART_UPLOAD = 's3:AbortMultipartUpload',
   BYPASS_GOVERNANCE_RETENTION = 's3:BypassGovernanceRetention',
@@ -1047,7 +1030,6 @@ export enum S3 {
   UPDATE_JOB_PRIORITY = 's3:UpdateJobPriority',
   UPDATE_JOB_STATUS = 's3:UpdateJobStatus',
 }
-
 export enum SAGEMAKER {
   ADD_TAGS = 'sagemaker:AddTags',
   ASSOCIATE_TRIAL_COMPONENT = 'sagemaker:AssociateTrialComponent',
@@ -1191,7 +1173,6 @@ export enum SAGEMAKER {
   UPDATE_WORKFORCE = 'sagemaker:UpdateWorkforce',
   UPDATE_WORKTEAM = 'sagemaker:UpdateWorkteam',
 }
-
 export enum LAKE_FORMATION {
   BATCH_GRANT_PERMISSIONS = 'lakeformation:BatchGrantPermissions',
   BATCH_REVOKE_PERMISSIONS = 'lakeformation:BatchRevokePermissions',
@@ -1208,7 +1189,6 @@ export enum LAKE_FORMATION {
   REVOKE_PERMISSIONS = 'lakeformation:RevokePermissions',
   UPDATE_RESOURCE = 'lakeformation:UpdateResource',
 }
-
 export enum MOBILE_HUB {
   CREATE_PROJECT = 'mobilehub:CreateProject',
   CREATE_SERVICE_ROLE = 'mobilehub:CreateServiceRole',
@@ -1234,7 +1214,6 @@ export enum MOBILE_HUB {
   VALIDATE_PROJECT = 'mobilehub:ValidateProject',
   VERIFY_SERVICE_ROLE = 'mobilehub:VerifyServiceRole',
 }
-
 export enum GLOBAL_ACCELERATOR {
   ADVERTISE_BYOIP_CIDR = 'globalaccelerator:AdvertiseByoipCidr',
   CREATE_ACCELERATOR = 'globalaccelerator:CreateAccelerator',
@@ -1262,7 +1241,6 @@ export enum GLOBAL_ACCELERATOR {
   UPDATE_LISTENER = 'globalaccelerator:UpdateListener',
   WITHDRAW_BYOIP_CIDR = 'globalaccelerator:WithdrawByoipCidr',
 }
-
 export enum SERVERLESS_APPLICATION_REPOSITORY {
   CREATE_APPLICATION = 'serverlessrepo:CreateApplication',
   CREATE_APPLICATION_VERSION = 'serverlessrepo:CreateApplicationVersion',
@@ -1280,7 +1258,6 @@ export enum SERVERLESS_APPLICATION_REPOSITORY {
   UNSHARE_APPLICATION = 'serverlessrepo:UnshareApplication',
   UPDATE_APPLICATION = 'serverlessrepo:UpdateApplication',
 }
-
 export enum FORECAST {
   CREATE_DATASET = 'forecast:CreateDataset',
   CREATE_DATASET_GROUP = 'forecast:CreateDatasetGroup',
@@ -1310,7 +1287,6 @@ export enum FORECAST {
   QUERY_FORECAST = 'forecast:QueryForecast',
   UPDATE_DATASET_GROUP = 'forecast:UpdateDatasetGroup',
 }
-
 export enum CLOUD_DIRECTORY {
   ADD_FACET_TO_OBJECT = 'clouddirectory:AddFacetToObject',
   APPLY_SCHEMA = 'clouddirectory:ApplySchema',
@@ -1375,7 +1351,6 @@ export enum CLOUD_DIRECTORY {
   UPDATE_SCHEMA = 'clouddirectory:UpdateSchema',
   UPDATE_TYPED_LINK_FACET = 'clouddirectory:UpdateTypedLinkFacet',
 }
-
 export enum ELEMENTAL_MEDIATAILOR {
   DELETE_PLAYBACK_CONFIGURATION = 'mediatailor:DeletePlaybackConfiguration',
   GET_PLAYBACK_CONFIGURATION = 'mediatailor:GetPlaybackConfiguration',
@@ -1385,7 +1360,6 @@ export enum ELEMENTAL_MEDIATAILOR {
   TAG_RESOURCE = 'mediatailor:TagResource',
   UNTAG_RESOURCE = 'mediatailor:UntagResource',
 }
-
 export enum ROUTE_53 {
   ASSOCIATE_VPC_WITH_HOSTED_ZONE = 'route53:AssociateVPCWithHostedZone',
   CHANGE_RESOURCE_RECORD_SETS = 'route53:ChangeResourceRecordSets',
@@ -1444,7 +1418,6 @@ export enum ROUTE_53 {
   UPDATE_TRAFFIC_POLICY_COMMENT = 'route53:UpdateTrafficPolicyComment',
   UPDATE_TRAFFIC_POLICY_INSTANCE = 'route53:UpdateTrafficPolicyInstance',
 }
-
 export enum SIMPLEDB {
   BATCH_DELETE_ATTRIBUTES = 'sdb:BatchDeleteAttributes',
   BATCH_PUT_ATTRIBUTES = 'sdb:BatchPutAttributes',
@@ -1457,7 +1430,6 @@ export enum SIMPLEDB {
   PUT_ATTRIBUTES = 'sdb:PutAttributes',
   SELECT = 'sdb:Select',
 }
-
 export enum SECURITY_TOKEN_SERVICE {
   ASSUME_ROLE = 'sts:AssumeRole',
   ASSUME_ROLE_WITH_SAML = 'sts:AssumeRoleWithSAML',
@@ -1469,7 +1441,6 @@ export enum SECURITY_TOKEN_SERVICE {
   GET_SESSION_TOKEN = 'sts:GetSessionToken',
   TAG_SESSION = 'sts:TagSession',
 }
-
 export enum ELEMENTAL_MEDIAPACKAGE {
   CREATE_CHANNEL = 'mediapackage:CreateChannel',
   CREATE_ORIGIN_ENDPOINT = 'mediapackage:CreateOriginEndpoint',
@@ -1486,7 +1457,6 @@ export enum ELEMENTAL_MEDIAPACKAGE {
   UPDATE_CHANNEL = 'mediapackage:UpdateChannel',
   UPDATE_ORIGIN_ENDPOINT = 'mediapackage:UpdateOriginEndpoint',
 }
-
 export enum MANAGED_APACHE_CASSANDRA_SERVICE {
   ALTER = 'cassandra:Alter',
   CREATE = 'cassandra:Create',
@@ -1496,7 +1466,6 @@ export enum MANAGED_APACHE_CASSANDRA_SERVICE {
   TAG_RESOURCE = 'cassandra:TagResource',
   UNTAG_RESOURCE = 'cassandra:UntagResource',
 }
-
 export enum ATHENA {
   BATCH_GET_NAMED_QUERY = 'athena:BatchGetNamedQuery',
   BATCH_GET_QUERY_EXECUTION = 'athena:BatchGetQueryExecution',
@@ -1529,19 +1498,16 @@ export enum ATHENA {
   UNTAG_RESOURCE = 'athena:UntagResource',
   UPDATE_WORK_GROUP = 'athena:UpdateWorkGroup',
 }
-
 export enum MARKETPLACE_METERING_SERVICE {
   BATCH_METER_USAGE = 'aws-marketplace:BatchMeterUsage',
   METER_USAGE = 'aws-marketplace:MeterUsage',
   REGISTER_USAGE = 'aws-marketplace:RegisterUsage',
   RESOLVE_CUSTOMER = 'aws-marketplace:ResolveCustomer',
 }
-
 export enum MARKETPLACE_PROCUREMENT_SYSTEMS_INTEGRATION {
   DESCRIBE_PROCUREMENT_SYSTEM_CONFIGURATION = 'aws-marketplace:DescribeProcurementSystemConfiguration',
   PUT_PROCUREMENT_SYSTEM_CONFIGURATION = 'aws-marketplace:PutProcurementSystemConfiguration',
 }
-
 export enum MARKETPLACE_CATALOG {
   CANCEL_CHANGE_SET = 'aws-marketplace:CancelChangeSet',
   COMPLETE_TASK = 'aws-marketplace:CompleteTask',
@@ -1554,17 +1520,14 @@ export enum MARKETPLACE_CATALOG {
   START_CHANGE_SET = 'aws-marketplace:StartChangeSet',
   UPDATE_TASK = 'aws-marketplace:UpdateTask',
 }
-
 export enum MARKETPLACE_IMAGE_BUILDING_SERVICE {
   DESCRIBE_BUILDS = 'aws-marketplace:DescribeBuilds',
   LIST_BUILDS = 'aws-marketplace:ListBuilds',
   START_BUILD = 'aws-marketplace:StartBuild',
 }
-
 export enum MARKETPLACE_ENTITLEMENT_SERVICE {
   GET_ENTITLEMENTS = 'aws-marketplace:GetEntitlements',
 }
-
 export enum MARKETPLACE {
   ACCEPT_AGREEMENT_APPROVAL_REQUEST = 'aws-marketplace:AcceptAgreementApprovalRequest',
   CANCEL_AGREEMENT_REQUEST = 'aws-marketplace:CancelAgreementRequest',
@@ -1578,7 +1541,6 @@ export enum MARKETPLACE {
   UPDATE_AGREEMENT_APPROVAL_REQUEST = 'aws-marketplace:UpdateAgreementApprovalRequest',
   VIEW_SUBSCRIPTIONS = 'aws-marketplace:ViewSubscriptions',
 }
-
 export enum PRIVATE_MARKETPLACE {
   ASSOCIATE_PRODUCTS_WITH_PRIVATE_MARKETPLACE = 'aws-marketplace:AssociateProductsWithPrivateMarketplace',
   CREATE_PRIVATE_MARKETPLACE = 'aws-marketplace:CreatePrivateMarketplace',
@@ -1597,7 +1559,6 @@ export enum PRIVATE_MARKETPLACE {
   UPDATE_PRIVATE_MARKETPLACE_PROFILE = 'aws-marketplace:UpdatePrivateMarketplaceProfile',
   UPDATE_PRIVATE_MARKETPLACE_SETTINGS = 'aws-marketplace:UpdatePrivateMarketplaceSettings',
 }
-
 export enum PINPOINT {
   CREATE_APP = 'mobiletargeting:CreateApp',
   CREATE_CAMPAIGN = 'mobiletargeting:CreateCampaign',
@@ -1707,12 +1668,10 @@ export enum PINPOINT {
   UPDATE_VOICE_CHANNEL = 'mobiletargeting:UpdateVoiceChannel',
   UPDATE_VOICE_TEMPLATE = 'mobiletargeting:UpdateVoiceTemplate',
 }
-
 export enum SUMERIAN {
   LOGIN = 'sumerian:Login',
   VIEW_RELEASE = 'sumerian:ViewRelease',
 }
-
 export enum AUTO_SCALING {
   CREATE_SCALING_PLAN = 'autoscaling-plans:CreateScalingPlan',
   DELETE_SCALING_PLAN = 'autoscaling-plans:DeleteScalingPlan',
@@ -1721,14 +1680,12 @@ export enum AUTO_SCALING {
   GET_SCALING_PLAN_RESOURCE_FORECAST_DATA = 'autoscaling-plans:GetScalingPlanResourceForecastData',
   UPDATE_SCALING_PLAN = 'autoscaling-plans:UpdateScalingPlan',
 }
-
 export enum COST_AND_USAGE_REPORT {
   DELETE_REPORT_DEFINITION = 'cur:DeleteReportDefinition',
   DESCRIBE_REPORT_DEFINITIONS = 'cur:DescribeReportDefinitions',
   MODIFY_REPORT_DEFINITION = 'cur:ModifyReportDefinition',
   PUT_REPORT_DEFINITION = 'cur:PutReportDefinition',
 }
-
 export enum ROUTE53_DOMAINS {
   CHECK_DOMAIN_AVAILABILITY = 'route53domains:CheckDomainAvailability',
   DELETE_TAGS_FOR_DOMAIN = 'route53domains:DeleteTagsForDomain',
@@ -1754,7 +1711,6 @@ export enum ROUTE53_DOMAINS {
   UPDATE_TAGS_FOR_DOMAIN = 'route53domains:UpdateTagsForDomain',
   VIEW_BILLING = 'route53domains:ViewBilling',
 }
-
 export enum OPSWORKS {
   ASSIGN_INSTANCE = 'opsworks:AssignInstance',
   ASSIGN_VOLUME = 'opsworks:AssignVolume',
@@ -1830,7 +1786,6 @@ export enum OPSWORKS {
   UPDATE_USER_PROFILE = 'opsworks:UpdateUserProfile',
   UPDATE_VOLUME = 'opsworks:UpdateVolume',
 }
-
 export enum FREERTOS {
   CREATE_SOFTWARE_CONFIGURATION = 'freertos:CreateSoftwareConfiguration',
   DELETE_SOFTWARE_CONFIGURATION = 'freertos:DeleteSoftwareConfiguration',
@@ -1844,7 +1799,6 @@ export enum FREERTOS {
   LIST_SOFTWARE_CONFIGURATIONS = 'freertos:ListSoftwareConfigurations',
   UPDATE_SOFTWARE_CONFIGURATION = 'freertos:UpdateSoftwareConfiguration',
 }
-
 export enum CODEDEPLOY {
   ADD_TAGS_TO_ON_PREMISES_INSTANCES = 'codedeploy:AddTagsToOnPremisesInstances',
   BATCH_GET_APPLICATION_REVISIONS = 'codedeploy:BatchGetApplicationRevisions',
@@ -1893,7 +1847,6 @@ export enum CODEDEPLOY {
   UPDATE_APPLICATION = 'codedeploy:UpdateApplication',
   UPDATE_DEPLOYMENT_GROUP = 'codedeploy:UpdateDeploymentGroup',
 }
-
 export enum IDENTITY_AND_ACCESS_MANAGEMENT {
   ADD_CLIENT_ID_TO_OPEN_ID_CONNECT_PROVIDER = 'iam:AddClientIDToOpenIDConnectProvider',
   ADD_ROLE_TO_INSTANCE_PROFILE = 'iam:AddRoleToInstanceProfile',
@@ -2037,7 +1990,6 @@ export enum IDENTITY_AND_ACCESS_MANAGEMENT {
   UPLOAD_SERVER_CERTIFICATE = 'iam:UploadServerCertificate',
   UPLOAD_SIGNING_CERTIFICATE = 'iam:UploadSigningCertificate',
 }
-
 export enum ROUTE_53_RESOLVER {
   ASSOCIATE_RESOLVER_ENDPOINT_IP_ADDRESS = 'route53resolver:AssociateResolverEndpointIpAddress',
   ASSOCIATE_RESOLVER_RULE = 'route53resolver:AssociateResolverRule',
@@ -2062,7 +2014,6 @@ export enum ROUTE_53_RESOLVER {
   UPDATE_RESOLVER_ENDPOINT = 'route53resolver:UpdateResolverEndpoint',
   UPDATE_RESOLVER_RULE = 'route53resolver:UpdateResolverRule',
 }
-
 export enum WORKMAIL {
   ADD_MEMBERS_TO_GROUP = 'workmail:AddMembersToGroup',
   ASSOCIATE_DELEGATE_TO_RESOURCE = 'workmail:AssociateDelegateToResource',
@@ -2158,7 +2109,6 @@ export enum WORKMAIL {
   UPDATE_SMTP_GATEWAY = 'workmail:UpdateSmtpGateway',
   WIPE_MOBILE_DEVICE = 'workmail:WipeMobileDevice',
 }
-
 export enum CODEBUILD {
   BATCH_DELETE_BUILDS = 'codebuild:BatchDeleteBuilds',
   BATCH_GET_BUILDS = 'codebuild:BatchGetBuilds',
@@ -2202,7 +2152,6 @@ export enum CODEBUILD {
   UPDATE_REPORT_GROUP = 'codebuild:UpdateReportGroup',
   UPDATE_WEBHOOK = 'codebuild:UpdateWebhook',
 }
-
 export enum IOT_ANALYTICS {
   BATCH_PUT_MESSAGE = 'iotanalytics:BatchPutMessage',
   CANCEL_PIPELINE_REPROCESSING = 'iotanalytics:CancelPipelineReprocessing',
@@ -2238,7 +2187,6 @@ export enum IOT_ANALYTICS {
   UPDATE_DATASTORE = 'iotanalytics:UpdateDatastore',
   UPDATE_PIPELINE = 'iotanalytics:UpdatePipeline',
 }
-
 export enum CONNECT {
   CREATE_INSTANCE = 'connect:CreateInstance',
   CREATE_USER = 'connect:CreateUser',
@@ -2276,7 +2224,6 @@ export enum CONNECT {
   UPDATE_USER_ROUTING_PROFILE = 'connect:UpdateUserRoutingProfile',
   UPDATE_USER_SECURITY_PROFILES = 'connect:UpdateUserSecurityProfiles',
 }
-
 export enum PINPOINT_EMAIL_SERVICE {
   CREATE_CONFIGURATION_SET = 'ses:CreateConfigurationSet',
   CREATE_CONFIGURATION_SET_EVENT_DESTINATION = 'ses:CreateConfigurationSetEventDestination',
@@ -2319,7 +2266,6 @@ export enum PINPOINT_EMAIL_SERVICE {
   UNTAG_RESOURCE = 'ses:UntagResource',
   UPDATE_CONFIGURATION_SET_EVENT_DESTINATION = 'ses:UpdateConfigurationSetEventDestination',
 }
-
 export enum SES {
   CLONE_RECEIPT_RULE_SET = 'ses:CloneReceiptRuleSet',
   CREATE_CONFIGURATION_SET = 'ses:CreateConfigurationSet',
@@ -2392,7 +2338,6 @@ export enum SES {
   VERIFY_EMAIL_ADDRESS = 'ses:VerifyEmailAddress',
   VERIFY_EMAIL_IDENTITY = 'ses:VerifyEmailIdentity',
 }
-
 export enum COST_EXPLORER_SERVICE {
   CREATE_COST_CATEGORY_DEFINITION = 'ce:CreateCostCategoryDefinition',
   DELETE_COST_CATEGORY_DEFINITION = 'ce:DeleteCostCategoryDefinition',
@@ -2414,7 +2359,6 @@ export enum COST_EXPLORER_SERVICE {
   LIST_COST_CATEGORY_DEFINITIONS = 'ce:ListCostCategoryDefinitions',
   UPDATE_COST_CATEGORY_DEFINITION = 'ce:UpdateCostCategoryDefinition',
 }
-
 export enum CLOUDWATCH_SYNTHETICS {
   CREATE_CANARY = 'synthetics:CreateCanary',
   DELETE_CANARY = 'synthetics:DeleteCanary',
@@ -2428,11 +2372,9 @@ export enum CLOUDWATCH_SYNTHETICS {
   UNTAG_RESOURCE = 'synthetics:UntagResource',
   UPDATE_CANARY = 'synthetics:UpdateCanary',
 }
-
 export enum ELASTIC_INFERENCE {
   CONNECT = 'elastic-inference:Connect',
 }
-
 export enum DEEPLENS {
   ASSOCIATE_SERVICE_ROLE_TO_ACCOUNT = 'deeplens:AssociateServiceRoleToAccount',
   BATCH_GET_DEVICE = 'deeplens:BatchGetDevice',
@@ -2459,7 +2401,6 @@ export enum DEEPLENS {
   REMOVE_PROJECT = 'deeplens:RemoveProject',
   UPDATE_PROJECT = 'deeplens:UpdateProject',
 }
-
 export enum RDS_DATA_API {
   BATCH_EXECUTE_STATEMENT = 'rds-data:BatchExecuteStatement',
   BEGIN_TRANSACTION = 'rds-data:BeginTransaction',
@@ -2468,7 +2409,6 @@ export enum RDS_DATA_API {
   EXECUTE_STATEMENT = 'rds-data:ExecuteStatement',
   ROLLBACK_TRANSACTION = 'rds-data:RollbackTransaction',
 }
-
 export enum SSO_DIRECTORY {
   ADD_MEMBER_TO_GROUP = 'sso-directory:AddMemberToGroup',
   COMPLETE_VIRTUAL_MFA_DEVICE_REGISTRATION = 'sso-directory:CompleteVirtualMfaDeviceRegistration',
@@ -2508,7 +2448,6 @@ export enum SSO_DIRECTORY {
   UPDATE_USER = 'sso-directory:UpdateUser',
   VERIFY_EMAIL = 'sso-directory:VerifyEmail',
 }
-
 export enum APPFLOW {
   CREATE_CONNECTOR_PROFILE = 'appflow:CreateConnectorProfile',
   CREATE_FLOW = 'appflow:CreateFlow',
@@ -2526,7 +2465,6 @@ export enum APPFLOW {
   UNTAG_RESOURCE = 'appflow:UntagResource',
   UPDATE_FLOW = 'appflow:UpdateFlow',
 }
-
 export enum TRUSTED_ADVISOR {
   DESCRIBE_ACCOUNT = 'trustedadvisor:DescribeAccount',
   DESCRIBE_ACCOUNT_ACCESS = 'trustedadvisor:DescribeAccountAccess',
@@ -2541,7 +2479,6 @@ export enum TRUSTED_ADVISOR {
   SET_ACCOUNT_ACCESS = 'trustedadvisor:SetAccountAccess',
   UPDATE_NOTIFICATION_PREFERENCES = 'trustedadvisor:UpdateNotificationPreferences',
 }
-
 export enum CONFIG {
   BATCH_GET_AGGREGATE_RESOURCE_CONFIG = 'config:BatchGetAggregateResourceConfig',
   BATCH_GET_RESOURCE_CONFIG = 'config:BatchGetResourceConfig',
@@ -2622,7 +2559,6 @@ export enum CONFIG {
   TAG_RESOURCE = 'config:TagResource',
   UNTAG_RESOURCE = 'config:UntagResource',
 }
-
 export enum RDS {
   ADD_ROLE_TO_DB_CLUSTER = 'rds:AddRoleToDBCluster',
   ADD_ROLE_TO_DB_INSTANCE = 'rds:AddRoleToDBInstance',
@@ -2749,7 +2685,6 @@ export enum RDS {
   STOP_DB_CLUSTER = 'rds:StopDBCluster',
   STOP_DB_INSTANCE = 'rds:StopDBInstance',
 }
-
 export enum SIMPLE_WORKFLOW_SERVICE {
   CANCEL_TIMER = 'swf:CancelTimer',
   CANCEL_WORKFLOW_EXECUTION = 'swf:CancelWorkflowExecution',
@@ -2798,7 +2733,6 @@ export enum SIMPLE_WORKFLOW_SERVICE {
   TERMINATE_WORKFLOW_EXECUTION = 'swf:TerminateWorkflowExecution',
   UNTAG_RESOURCE = 'swf:UntagResource',
 }
-
 export enum MACIE {
   ASSOCIATE_MEMBER_ACCOUNT = 'macie:AssociateMemberAccount',
   ASSOCIATE_S_3_RESOURCES = 'macie:AssociateS3Resources',
@@ -2808,7 +2742,6 @@ export enum MACIE {
   LIST_S_3_RESOURCES = 'macie:ListS3Resources',
   UPDATE_S_3_RESOURCES = 'macie:UpdateS3Resources',
 }
-
 export enum APPSYNC {
   CREATE_API_KEY = 'appsync:CreateApiKey',
   CREATE_DATA_SOURCE = 'appsync:CreateDataSource',
@@ -2848,7 +2781,6 @@ export enum APPSYNC {
   UPDATE_RESOLVER = 'appsync:UpdateResolver',
   UPDATE_TYPE = 'appsync:UpdateType',
 }
-
 export enum CERTIFICATE_MANAGER {
   ADD_TAGS_TO_CERTIFICATE = 'acm:AddTagsToCertificate',
   DELETE_CERTIFICATE = 'acm:DeleteCertificate',
@@ -2864,7 +2796,6 @@ export enum CERTIFICATE_MANAGER {
   RESEND_VALIDATION_EMAIL = 'acm:ResendValidationEmail',
   UPDATE_CERTIFICATE_OPTIONS = 'acm:UpdateCertificateOptions',
 }
-
 export enum XRAY {
   BATCH_GET_TRACES = 'xray:BatchGetTraces',
   CREATE_GROUP = 'xray:CreateGroup',
@@ -2887,7 +2818,6 @@ export enum XRAY {
   UPDATE_GROUP = 'xray:UpdateGroup',
   UPDATE_SAMPLING_RULE = 'xray:UpdateSamplingRule',
 }
-
 export enum CLOUDFRONT {
   CREATE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY = 'cloudfront:CreateCloudFrontOriginAccessIdentity',
   CREATE_DISTRIBUTION = 'cloudfront:CreateDistribution',
@@ -2936,7 +2866,6 @@ export enum CLOUDFRONT {
   UPDATE_PUBLIC_KEY = 'cloudfront:UpdatePublicKey',
   UPDATE_STREAMING_DISTRIBUTION = 'cloudfront:UpdateStreamingDistribution',
 }
-
 export enum ELASTIC_CONTAINER_SERVICE_FOR_KUBERNETES {
   CREATE_CLUSTER = 'eks:CreateCluster',
   CREATE_FARGATE_PROFILE = 'eks:CreateFargateProfile',
@@ -2960,7 +2889,6 @@ export enum ELASTIC_CONTAINER_SERVICE_FOR_KUBERNETES {
   UPDATE_NODEGROUP_CONFIG = 'eks:UpdateNodegroupConfig',
   UPDATE_NODEGROUP_VERSION = 'eks:UpdateNodegroupVersion',
 }
-
 export enum FIREWALL_MANAGER {
   ASSOCIATE_ADMIN_ACCOUNT = 'fms:AssociateAdminAccount',
   DELETE_NOTIFICATION_CHANNEL = 'fms:DeleteNotificationChannel',
@@ -2980,7 +2908,6 @@ export enum FIREWALL_MANAGER {
   TAG_RESOURCE = 'fms:TagResource',
   UNTAG_RESOURCE = 'fms:UntagResource',
 }
-
 export enum KINESIS {
   ADD_TAGS_TO_STREAM = 'kinesis:AddTagsToStream',
   CREATE_STREAM = 'kinesis:CreateStream',
@@ -3009,7 +2936,6 @@ export enum KINESIS {
   SUBSCRIBE_TO_SHARD = 'kinesis:SubscribeToShard',
   UPDATE_SHARD_COUNT = 'kinesis:UpdateShardCount',
 }
-
 export enum BILLING {
   MODIFY_ACCOUNT = 'aws-portal:ModifyAccount',
   MODIFY_BILLING = 'aws-portal:ModifyBilling',
@@ -3019,7 +2945,6 @@ export enum BILLING {
   VIEW_PAYMENT_METHODS = 'aws-portal:ViewPaymentMethods',
   VIEW_USAGE = 'aws-portal:ViewUsage',
 }
-
 export enum DIRECTORY_SERVICE {
   ACCEPT_SHARED_DIRECTORY = 'ds:AcceptSharedDirectory',
   ADD_IP_ROUTES = 'ds:AddIpRoutes',
@@ -3085,7 +3010,6 @@ export enum DIRECTORY_SERVICE {
   UPDATE_TRUST = 'ds:UpdateTrust',
   VERIFY_TRUST = 'ds:VerifyTrust',
 }
-
 export enum IOT_SITEWISE {
   ASSOCIATE_ASSETS = 'iotsitewise:AssociateAssets',
   BATCH_ASSOCIATE_PROJECT_ASSETS = 'iotsitewise:BatchAssociateProjectAssets',
@@ -3142,7 +3066,6 @@ export enum IOT_SITEWISE {
   UPDATE_PORTAL = 'iotsitewise:UpdatePortal',
   UPDATE_PROJECT = 'iotsitewise:UpdateProject',
 }
-
 export enum CODESTAR_NOTIFICATIONS {
   CREATE_NOTIFICATION_RULE = 'codestar-notifications:CreateNotificationRule',
   DELETE_NOTIFICATION_RULE = 'codestar-notifications:DeleteNotificationRule',
@@ -3158,7 +3081,6 @@ export enum CODESTAR_NOTIFICATIONS {
   UNTAG_RESOURCE = 'codestar-notifications:UntagResource',
   UPDATE_NOTIFICATION_RULE = 'codestar-notifications:UpdateNotificationRule',
 }
-
 export enum FRAUD_DETECTOR {
   BATCH_CREATE_VARIABLE = 'frauddetector:BatchCreateVariable',
   BATCH_GET_VARIABLE = 'frauddetector:BatchGetVariable',
@@ -3193,7 +3115,6 @@ export enum FRAUD_DETECTOR {
   UPDATE_RULE_VERSION = 'frauddetector:UpdateRuleVersion',
   UPDATE_VARIABLE = 'frauddetector:UpdateVariable',
 }
-
 export enum WORKLINK {
   ASSOCIATE_DOMAIN = 'worklink:AssociateDomain',
   ASSOCIATE_WEBSITE_AUTHORIZATION_PROVIDER = 'worklink:AssociateWebsiteAuthorizationProvider',
@@ -3226,7 +3147,6 @@ export enum WORKLINK {
   UPDATE_FLEET_METADATA = 'worklink:UpdateFleetMetadata',
   UPDATE_IDENTITY_PROVIDER_CONFIGURATION = 'worklink:UpdateIdentityProviderConfiguration',
 }
-
 export enum WORKSPACES {
   ASSOCIATE_IP_GROUPS = 'workspaces:AssociateIpGroups',
   AUTHORIZE_IP_RULES = 'workspaces:AuthorizeIpRules',
@@ -3261,7 +3181,6 @@ export enum WORKSPACES {
   TERMINATE_WORKSPACES = 'workspaces:TerminateWorkspaces',
   UPDATE_RULES_OF_IP_GROUP = 'workspaces:UpdateRulesOfIpGroup',
 }
-
 export enum CHIME {
   ACCEPT_DELEGATE = 'chime:AcceptDelegate',
   ACTIVATE_USERS = 'chime:ActivateUsers',
@@ -3425,7 +3344,6 @@ export enum CHIME {
   UPDATE_VOICE_CONNECTOR_GROUP = 'chime:UpdateVoiceConnectorGroup',
   VALIDATE_ACCOUNT_RESOURCE = 'chime:ValidateAccountResource',
 }
-
 export enum ELASTICACHE {
   ADD_TAGS_TO_RESOURCE = 'elasticache:AddTagsToResource',
   AUTHORIZE_CACHE_SECURITY_GROUP_INGRESS = 'elasticache:AuthorizeCacheSecurityGroupIngress',
@@ -3470,7 +3388,6 @@ export enum ELASTICACHE {
   REVOKE_CACHE_SECURITY_GROUP_INGRESS = 'elasticache:RevokeCacheSecurityGroupIngress',
   TEST_FAILOVER = 'elasticache:TestFailover',
 }
-
 export enum KINESIS_FIREHOSE {
   CREATE_DELIVERY_STREAM = 'firehose:CreateDeliveryStream',
   DELETE_DELIVERY_STREAM = 'firehose:DeleteDeliveryStream',
@@ -3485,7 +3402,6 @@ export enum KINESIS_FIREHOSE {
   UNTAG_DELIVERY_STREAM = 'firehose:UntagDeliveryStream',
   UPDATE_DESTINATION = 'firehose:UpdateDestination',
 }
-
 export enum MECHANICAL_TURK {
   ACCEPT_QUALIFICATION_REQUEST = 'mechanicalturk:AcceptQualificationRequest',
   APPROVE_ASSIGNMENT = 'mechanicalturk:ApproveAssignment',
@@ -3527,7 +3443,6 @@ export enum MECHANICAL_TURK {
   UPDATE_NOTIFICATION_SETTINGS = 'mechanicalturk:UpdateNotificationSettings',
   UPDATE_QUALIFICATION_TYPE = 'mechanicalturk:UpdateQualificationType',
 }
-
 export enum STORAGE_GATEWAY {
   ACTIVATE_GATEWAY = 'storagegateway:ActivateGateway',
   ADD_CACHE = 'storagegateway:AddCache',
@@ -3601,7 +3516,6 @@ export enum STORAGE_GATEWAY {
   UPDATE_SNAPSHOT_SCHEDULE = 'storagegateway:UpdateSnapshotSchedule',
   UPDATE_VTL_DEVICE_TYPE = 'storagegateway:UpdateVTLDeviceType',
 }
-
 export enum ELASTIC_MAPREDUCE {
   ADD_INSTANCE_FLEET = 'elasticmapreduce:AddInstanceFleet',
   ADD_INSTANCE_GROUPS = 'elasticmapreduce:AddInstanceGroups',
@@ -3641,7 +3555,6 @@ export enum ELASTIC_MAPREDUCE {
   TERMINATE_JOB_FLOWS = 'elasticmapreduce:TerminateJobFlows',
   VIEW_EVENTS_FROM_ALL_CLUSTERS_IN_CONSOLE = 'elasticmapreduce:ViewEventsFromAllClustersInConsole',
 }
-
 export enum BATCH {
   CANCEL_JOB = 'batch:CancelJob',
   CREATE_COMPUTE_ENVIRONMENT = 'batch:CreateComputeEnvironment',
@@ -3660,7 +3573,6 @@ export enum BATCH {
   UPDATE_COMPUTE_ENVIRONMENT = 'batch:UpdateComputeEnvironment',
   UPDATE_JOB_QUEUE = 'batch:UpdateJobQueue',
 }
-
 export enum IOT_EVENTS {
   BATCH_PUT_MESSAGE = 'iotevents:BatchPutMessage',
   BATCH_UPDATE_DETECTOR = 'iotevents:BatchUpdateDetector',
@@ -3684,7 +3596,6 @@ export enum IOT_EVENTS {
   UPDATE_INPUT = 'iotevents:UpdateInput',
   UPDATE_INPUT_ROUTING = 'iotevents:UpdateInputRouting',
 }
-
 export enum CLOUDTRAIL {
   ADD_TAGS = 'cloudtrail:AddTags',
   CREATE_TRAIL = 'cloudtrail:CreateTrail',
@@ -3705,7 +3616,6 @@ export enum CLOUDTRAIL {
   STOP_LOGGING = 'cloudtrail:StopLogging',
   UPDATE_TRAIL = 'cloudtrail:UpdateTrail',
 }
-
 export enum DYNAMODB {
   BATCH_GET_ITEM = 'dynamodb:BatchGetItem',
   BATCH_WRITE_ITEM = 'dynamodb:BatchWriteItem',
@@ -3756,7 +3666,6 @@ export enum DYNAMODB {
   UPDATE_TABLE_REPLICA_AUTO_SCALING = 'dynamodb:UpdateTableReplicaAutoScaling',
   UPDATE_TIME_TO_LIVE = 'dynamodb:UpdateTimeToLive',
 }
-
 export enum ELASTICSEARCH_SERVICE {
   ADD_TAGS = 'es:AddTags',
   CREATE_ELASTICSEARCH_DOMAIN = 'es:CreateElasticsearchDomain',
@@ -3788,7 +3697,6 @@ export enum ELASTICSEARCH_SERVICE {
   UPDATE_ELASTICSEARCH_DOMAIN_CONFIG = 'es:UpdateElasticsearchDomainConfig',
   UPGRADE_ELASTICSEARCH_DOMAIN = 'es:UpgradeElasticsearchDomain',
 }
-
 export enum DEEPRACER {
   CLONE_REINFORCEMENT_LEARNING_MODEL = 'deepracer:CloneReinforcementLearningModel',
   CREATE_ACCOUNT_RESOURCES = 'deepracer:CreateAccountResources',
@@ -3817,12 +3725,10 @@ export enum DEEPRACER {
   STOP_TRAINING_REINFORCEMENT_LEARNING_MODEL = 'deepracer:StopTrainingReinforcementLearningModel',
   TEST_REWARD_FUNCTION = 'deepracer:TestRewardFunction',
 }
-
 export enum BUDGET_SERVICE {
   MODIFY_BUDGET = 'budgets:ModifyBudget',
   VIEW_BUDGET = 'budgets:ViewBudget',
 }
-
 export enum EVENTBRIDGE_SCHEMAS {
   CREATE_DISCOVERER = 'schemas:CreateDiscoverer',
   CREATE_REGISTRY = 'schemas:CreateRegistry',
@@ -3855,7 +3761,6 @@ export enum EVENTBRIDGE_SCHEMAS {
   UPDATE_REGISTRY = 'schemas:UpdateRegistry',
   UPDATE_SCHEMA = 'schemas:UpdateSchema',
 }
-
 export enum NETWORK_MANAGER {
   ASSOCIATE_CUSTOMER_GATEWAY = 'networkmanager:AssociateCustomerGateway',
   ASSOCIATE_LINK = 'networkmanager:AssociateLink',
@@ -3886,7 +3791,6 @@ export enum NETWORK_MANAGER {
   UPDATE_LINK = 'networkmanager:UpdateLink',
   UPDATE_SITE = 'networkmanager:UpdateSite',
 }
-
 export enum SUPPORT {
   ADD_ATTACHMENTS_TO_SET = 'support:AddAttachmentsToSet',
   ADD_COMMUNICATION_TO_CASE = 'support:AddCommunicationToCase',
@@ -3911,7 +3815,6 @@ export enum SUPPORT {
   RESOLVE_CASE = 'support:ResolveCase',
   SEARCH_FOR_CASES = 'support:SearchForCases',
 }
-
 export enum COGNITO_IDENTITY {
   CREATE_IDENTITY_POOL = 'cognito-identity:CreateIdentityPool',
   DELETE_IDENTITIES = 'cognito-identity:DeleteIdentities',
@@ -3935,7 +3838,6 @@ export enum COGNITO_IDENTITY {
   UNTAG_RESOURCE = 'cognito-identity:UntagResource',
   UPDATE_IDENTITY_POOL = 'cognito-identity:UpdateIdentityPool',
 }
-
 export enum POLLY {
   DELETE_LEXICON = 'polly:DeleteLexicon',
   DESCRIBE_VOICES = 'polly:DescribeVoices',
@@ -3947,7 +3849,6 @@ export enum POLLY {
   START_SPEECH_SYNTHESIS_TASK = 'polly:StartSpeechSynthesisTask',
   SYNTHESIZE_SPEECH = 'polly:SynthesizeSpeech',
 }
-
 export enum APPCONFIG {
   CREATE_APPLICATION = 'appconfig:CreateApplication',
   CREATE_CONFIGURATION_PROFILE = 'appconfig:CreateConfigurationProfile',
@@ -3979,7 +3880,6 @@ export enum APPCONFIG {
   UPDATE_ENVIRONMENT = 'appconfig:UpdateEnvironment',
   VALIDATE_CONFIGURATION = 'appconfig:ValidateConfiguration',
 }
-
 export enum LICENSE_MANAGER {
   CREATE_LICENSE_CONFIGURATION = 'license-manager:CreateLicenseConfiguration',
   DELETE_LICENSE_CONFIGURATION = 'license-manager:DeleteLicenseConfiguration',
@@ -3997,7 +3897,6 @@ export enum LICENSE_MANAGER {
   UPDATE_LICENSE_SPECIFICATIONS_FOR_RESOURCE = 'license-manager:UpdateLicenseSpecificationsForResource',
   UPDATE_SERVICE_SETTINGS = 'license-manager:UpdateServiceSettings',
 }
-
 export enum ALEXA_FOR_BUSINESS {
   APPROVE_SKILL = 'a4b:ApproveSkill',
   ASSOCIATE_CONTACT_WITH_ADDRESS_BOOK = 'a4b:AssociateContactWithAddressBook',
@@ -4080,7 +3979,6 @@ export enum ALEXA_FOR_BUSINESS {
   UPDATE_ROOM = 'a4b:UpdateRoom',
   UPDATE_SKILL_GROUP = 'a4b:UpdateSkillGroup',
 }
-
 export enum CERTIFICATE_MANAGER_PRIVATE_CERTIFICATE_AUTHORITY {
   CREATE_CERTIFICATE_AUTHORITY = 'acm-pca:CreateCertificateAuthority',
   CREATE_CERTIFICATE_AUTHORITY_AUDIT_REPORT = 'acm-pca:CreateCertificateAuthorityAuditReport',
@@ -4103,7 +4001,6 @@ export enum CERTIFICATE_MANAGER_PRIVATE_CERTIFICATE_AUTHORITY {
   UNTAG_CERTIFICATE_AUTHORITY = 'acm-pca:UntagCertificateAuthority',
   UPDATE_CERTIFICATE_AUTHORITY = 'acm-pca:UpdateCertificateAuthority',
 }
-
 export enum STEP_FUNCTIONS {
   CREATE_ACTIVITY = 'states:CreateActivity',
   CREATE_STATE_MACHINE = 'states:CreateStateMachine',
@@ -4128,7 +4025,6 @@ export enum STEP_FUNCTIONS {
   UNTAG_RESOURCE = 'states:UntagResource',
   UPDATE_STATE_MACHINE = 'states:UpdateStateMachine',
 }
-
 export enum MESSAGE_DELIVERY_SERVICE {
   ACKNOWLEDGE_MESSAGE = 'ec2messages:AcknowledgeMessage',
   DELETE_MESSAGE = 'ec2messages:DeleteMessage',
@@ -4137,7 +4033,6 @@ export enum MESSAGE_DELIVERY_SERVICE {
   GET_MESSAGES = 'ec2messages:GetMessages',
   SEND_REPLY = 'ec2messages:SendReply',
 }
-
 export enum IOT_GREENGRASS {
   ASSOCIATE_ROLE_TO_GROUP = 'greengrass:AssociateRoleToGroup',
   ASSOCIATE_SERVICE_ROLE_TO_ACCOUNT = 'greengrass:AssociateServiceRoleToAccount',
@@ -4230,7 +4125,6 @@ export enum IOT_GREENGRASS {
   UPDATE_RESOURCE_DEFINITION = 'greengrass:UpdateResourceDefinition',
   UPDATE_SUBSCRIPTION_DEFINITION = 'greengrass:UpdateSubscriptionDefinition',
 }
-
 export enum REDSHIFT {
   ACCEPT_RESERVED_NODE_EXCHANGE = 'redshift:AcceptReservedNodeExchange',
   AUTHORIZE_CLUSTER_SECURITY_GROUP_INGRESS = 'redshift:AuthorizeClusterSecurityGroupIngress',
@@ -4339,7 +4233,6 @@ export enum REDSHIFT {
   VIEW_QUERIES_FROM_CONSOLE = 'redshift:ViewQueriesFromConsole',
   VIEW_QUERIES_IN_CONSOLE = 'redshift:ViewQueriesInConsole',
 }
-
 export enum WORKDOCS {
   ABORT_DOCUMENT_VERSION_UPLOAD = 'workdocs:AbortDocumentVersionUpload',
   ACTIVATE_USER = 'workdocs:ActivateUser',
@@ -4393,7 +4286,6 @@ export enum WORKDOCS {
   UPDATE_INSTANCE_ALIAS = 'workdocs:UpdateInstanceAlias',
   UPDATE_USER = 'workdocs:UpdateUser',
 }
-
 export enum MARKETPLACE_MANAGEMENT_PORTAL {
   UPLOAD_FILES = 'aws-marketplace-management:uploadFiles',
   VIEW_MARKETING = 'aws-marketplace-management:viewMarketing',
@@ -4401,12 +4293,10 @@ export enum MARKETPLACE_MANAGEMENT_PORTAL {
   VIEW_SETTINGS = 'aws-marketplace-management:viewSettings',
   VIEW_SUPPORT = 'aws-marketplace-management:viewSupport',
 }
-
 export enum COMPREHEND_MEDICAL {
   DETECT_ENTITIES = 'comprehendmedical:DetectEntities',
   DETECT_PHI = 'comprehendmedical:DetectPHI',
 }
-
 export enum DEEPCOMPOSER {
   ASSOCIATE_COUPON = 'deepcomposer:AssociateCoupon',
   CREATE_AUDIO = 'deepcomposer:CreateAudio',
@@ -4424,7 +4314,6 @@ export enum DEEPCOMPOSER {
   UPDATE_COMPOSITION = 'deepcomposer:UpdateComposition',
   UPDATE_MODEL = 'deepcomposer:UpdateModel',
 }
-
 export enum MANAGED_BLOCKCHAIN {
   CREATE_MEMBER = 'managedblockchain:CreateMember',
   CREATE_NETWORK = 'managedblockchain:CreateNetwork',
@@ -4447,7 +4336,6 @@ export enum MANAGED_BLOCKCHAIN {
   UPDATE_NODE = 'managedblockchain:UpdateNode',
   VOTE_ON_PROPOSAL = 'managedblockchain:VoteOnProposal',
 }
-
 export enum WAF {
   CREATE_BYTE_MATCH_SET = 'waf:CreateByteMatchSet',
   CREATE_GEO_MATCH_SET = 'waf:CreateGeoMatchSet',
@@ -4526,7 +4414,6 @@ export enum WAF {
   UPDATE_WEB_ACL = 'waf:UpdateWebACL',
   UPDATE_XSS_MATCH_SET = 'waf:UpdateXssMatchSet',
 }
-
 export enum APPSTREAM_20 {
   ASSOCIATE_FLEET = 'appstream:AssociateFleet',
   BATCH_ASSOCIATE_USER_STACK = 'appstream:BatchAssociateUserStack',
@@ -4579,7 +4466,6 @@ export enum APPSTREAM_20 {
   UPDATE_IMAGE_PERMISSIONS = 'appstream:UpdateImagePermissions',
   UPDATE_STACK = 'appstream:UpdateStack',
 }
-
 export enum QUICKSIGHT {
   CREATE_ADMIN = 'quicksight:CreateAdmin',
   CREATE_DASHBOARD = 'quicksight:CreateDashboard',
@@ -4638,7 +4524,6 @@ export enum QUICKSIGHT {
   UPDATE_TEMPLATE_PERMISSIONS = 'quicksight:UpdateTemplatePermissions',
   UPDATE_USER = 'quicksight:UpdateUser',
 }
-
 export enum WAF_V2 {
   ASSOCIATE_WEB_ACL = 'wafv2:AssociateWebACL',
   CHECK_CAPACITY = 'wafv2:CheckCapacity',
@@ -4677,11 +4562,9 @@ export enum WAF_V2 {
   UPDATE_RULE_GROUP = 'wafv2:UpdateRuleGroup',
   UPDATE_WEB_ACL = 'wafv2:UpdateWebACL',
 }
-
 export enum WORKSPACES_APPLICATION_MANAGER {
   AUTHENTICATE_PACKAGER = 'wam:AuthenticatePackager',
 }
-
 export enum DATA_LIFECYCLE_MANAGER {
   CREATE_LIFECYCLE_POLICY = 'dlm:CreateLifecyclePolicy',
   DELETE_LIFECYCLE_POLICY = 'dlm:DeleteLifecyclePolicy',
@@ -4692,7 +4575,6 @@ export enum DATA_LIFECYCLE_MANAGER {
   UNTAG_RESOURCE = 'dlm:UntagResource',
   UPDATE_LIFECYCLE_POLICY = 'dlm:UpdateLifecyclePolicy',
 }
-
 export enum WELLARCHITECTED_TOOL {
   CREATE_WORKLOAD = 'wellarchitected:CreateWorkload',
   CREATE_WORKLOAD_SHARE = 'wellarchitected:CreateWorkloadShare',
@@ -4700,13 +4582,11 @@ export enum WELLARCHITECTED_TOOL {
   GET_WORKLOAD = 'wellarchitected:GetWorkload',
   LIST_WORKLOADS = 'wellarchitected:ListWorkloads',
 }
-
 export enum CONNECTOR_SERVICE {
   GET_CONNECTOR_HEALTH = 'awsconnector:GetConnectorHealth',
   REGISTER_CONNECTOR = 'awsconnector:RegisterConnector',
   VALIDATE_CONNECTOR_ID = 'awsconnector:ValidateConnectorId',
 }
-
 export enum KENDRA {
   BATCH_DELETE_DOCUMENT = 'kendra:BatchDeleteDocument',
   BATCH_PUT_DOCUMENT = 'kendra:BatchPutDocument',
@@ -4729,7 +4609,6 @@ export enum KENDRA {
   UPDATE_DATA_SOURCE = 'kendra:UpdateDataSource',
   UPDATE_INDEX = 'kendra:UpdateIndex',
 }
-
 export enum LIGHTSAIL {
   ALLOCATE_STATIC_IP = 'lightsail:AllocateStaticIp',
   ATTACH_DISK = 'lightsail:AttachDisk',
@@ -4833,11 +4712,9 @@ export enum LIGHTSAIL {
   UPDATE_RELATIONAL_DATABASE = 'lightsail:UpdateRelationalDatabase',
   UPDATE_RELATIONAL_DATABASE_PARAMETERS = 'lightsail:UpdateRelationalDatabaseParameters',
 }
-
 export enum BACKUP_STORAGE {
   MOUNT_CAPSULE = 'backup-storage:MountCapsule',
 }
-
 export enum COGNITO_SYNC {
   BULK_PUBLISH = 'cognito-sync:BulkPublish',
   DELETE_DATASET = 'cognito-sync:DeleteDataset',
@@ -4859,7 +4736,6 @@ export enum COGNITO_SYNC {
   UNSUBSCRIBE_FROM_DATASET = 'cognito-sync:UnsubscribeFromDataset',
   UPDATE_RECORDS = 'cognito-sync:UpdateRecords',
 }
-
 export enum CLOUDSEARCH {
   ADD_TAGS = 'cloudsearch:AddTags',
   BUILD_SUGGESTERS = 'cloudsearch:BuildSuggesters',
@@ -4894,7 +4770,6 @@ export enum CLOUDSEARCH {
   SEARCH = 'cloudsearch:search',
   SUGGEST = 'cloudsearch:suggest',
 }
-
 export enum ELASTIC_TRANSCODER {
   CANCEL_JOB = 'elastictranscoder:CancelJob',
   CREATE_JOB = 'elastictranscoder:CreateJob',
@@ -4914,13 +4789,11 @@ export enum ELASTIC_TRANSCODER {
   UPDATE_PIPELINE_NOTIFICATIONS = 'elastictranscoder:UpdatePipelineNotifications',
   UPDATE_PIPELINE_STATUS = 'elastictranscoder:UpdatePipelineStatus',
 }
-
 export enum PRICE_LIST {
   DESCRIBE_SERVICES = 'pricing:DescribeServices',
   GET_ATTRIBUTE_VALUES = 'pricing:GetAttributeValues',
   GET_PRODUCTS = 'pricing:GetProducts',
 }
-
 export enum BACKUP {
   COPY_INTO_BACKUP_VAULT = 'backup:CopyIntoBackupVault',
   CREATE_BACKUP_PLAN = 'backup:CreateBackupPlan',
@@ -4970,13 +4843,11 @@ export enum BACKUP {
   UPDATE_BACKUP_PLAN = 'backup:UpdateBackupPlan',
   UPDATE_RECOVERY_POINT_LIFECYCLE = 'backup:UpdateRecoveryPointLifecycle',
 }
-
 export enum MOBILE_ANALYTICS {
   GET_FINANCIAL_REPORTS = 'mobileanalytics:GetFinancialReports',
   GET_REPORTS = 'mobileanalytics:GetReports',
   PUT_EVENTS = 'mobileanalytics:PutEvents',
 }
-
 export enum IOT_DEVICE_TESTER {
   CHECK_VERSION = 'iot-device-tester:CheckVersion',
   DOWNLOAD_TEST_SUITE = 'iot-device-tester:DownloadTestSuite',
@@ -4984,7 +4855,6 @@ export enum IOT_DEVICE_TESTER {
   SEND_METRICS = 'iot-device-tester:SendMetrics',
   SUPPORTED_VERSION = 'iot-device-tester:SupportedVersion',
 }
-
 export enum DATABASE_MIGRATION_SERVICE {
   ADD_TAGS_TO_RESOURCE = 'dms:AddTagsToResource',
   APPLY_PENDING_MAINTENANCE_ACTION = 'dms:ApplyPendingMaintenanceAction',
@@ -5032,21 +4902,18 @@ export enum DATABASE_MIGRATION_SERVICE {
   STOP_REPLICATION_TASK = 'dms:StopReplicationTask',
   TEST_CONNECTION = 'dms:TestConnection',
 }
-
 export enum SESSION_MANAGER_MESSAGE_GATEWAY_SERVICE {
   CREATE_CONTROL_CHANNEL = 'ssmmessages:CreateControlChannel',
   CREATE_DATA_CHANNEL = 'ssmmessages:CreateDataChannel',
   OPEN_CONTROL_CHANNEL = 'ssmmessages:OpenControlChannel',
   OPEN_DATA_CHANNEL = 'ssmmessages:OpenDataChannel',
 }
-
 export enum ARTIFACT {
   ACCEPT_AGREEMENT = 'artifact:AcceptAgreement',
   DOWNLOAD_AGREEMENT = 'artifact:DownloadAgreement',
   GET = 'artifact:Get',
   TERMINATE_AGREEMENT = 'artifact:TerminateAgreement',
 }
-
 export enum TRANSCRIBE {
   CREATE_VOCABULARY = 'transcribe:CreateVocabulary',
   CREATE_VOCABULARY_FILTER = 'transcribe:CreateVocabularyFilter',
@@ -5069,11 +4936,9 @@ export enum TRANSCRIBE {
   UPDATE_VOCABULARY = 'transcribe:UpdateVocabulary',
   UPDATE_VOCABULARY_FILTER = 'transcribe:UpdateVocabularyFilter',
 }
-
 export enum IQ_PERMISSIONS {
   APPROVE_ACCESS_GRANT = 'iq-permission:ApproveAccessGrant',
 }
-
 export enum ELEMENTAL_MEDIAPACKAGE_VOD {
   CREATE_ASSET = 'mediapackage-vod:CreateAsset',
   CREATE_PACKAGING_CONFIGURATION = 'mediapackage-vod:CreatePackagingConfiguration',
@@ -5088,7 +4953,6 @@ export enum ELEMENTAL_MEDIAPACKAGE_VOD {
   LIST_PACKAGING_CONFIGURATIONS = 'mediapackage-vod:ListPackagingConfigurations',
   LIST_PACKAGING_GROUPS = 'mediapackage-vod:ListPackagingGroups',
 }
-
 export enum DEVICE_FARM {
   CREATE_DEVICE_POOL = 'devicefarm:CreateDevicePool',
   CREATE_INSTANCE_PROFILE = 'devicefarm:CreateInstanceProfile',
@@ -5168,7 +5032,6 @@ export enum DEVICE_FARM {
   UPDATE_UPLOAD = 'devicefarm:UpdateUpload',
   UPDATE_VPCE_CONFIGURATION = 'devicefarm:UpdateVPCEConfiguration',
 }
-
 export enum GROUND_STATION {
   CANCEL_CONTACT = 'groundstation:CancelContact',
   CREATE_CONFIG = 'groundstation:CreateConfig',
@@ -5196,7 +5059,6 @@ export enum GROUND_STATION {
   UPDATE_CONFIG = 'groundstation:UpdateConfig',
   UPDATE_MISSION_PROFILE = 'groundstation:UpdateMissionProfile',
 }
-
 export enum CODE_SIGNING_FOR_FREERTOS {
   CANCEL_SIGNING_PROFILE = 'signer:CancelSigningProfile',
   DESCRIBE_SIGNING_JOB = 'signer:DescribeSigningJob',
@@ -5211,12 +5073,10 @@ export enum CODE_SIGNING_FOR_FREERTOS {
   TAG_RESOURCE = 'signer:TagResource',
   UNTAG_RESOURCE = 'signer:UntagResource',
 }
-
 export enum PURCHASE_ORDERS_CONSOLE {
   MODIFY_PURCHASE_ORDERS = 'purchase-orders:ModifyPurchaseOrders',
   VIEW_PURCHASE_ORDERS = 'purchase-orders:ViewPurchaseOrders',
 }
-
 export enum RESOURCE_GROUPS {
   CREATE_GROUP = 'resource-groups:CreateGroup',
   DELETE_GROUP = 'resource-groups:DeleteGroup',
@@ -5231,11 +5091,9 @@ export enum RESOURCE_GROUPS {
   UPDATE_GROUP = 'resource-groups:UpdateGroup',
   UPDATE_GROUP_QUERY = 'resource-groups:UpdateGroupQuery',
 }
-
 export enum IQ {
   CREATE_PROJECT = 'iq:CreateProject',
 }
-
 export enum MANAGE_API_GATEWAY {
   DELETE = 'apigateway:DELETE',
   GET = 'apigateway:GET',
@@ -5245,7 +5103,6 @@ export enum MANAGE_API_GATEWAY {
   SET_WEB_ACL = 'apigateway:SetWebACL',
   UPDATE_REST_API_POLICY = 'apigateway:UpdateRestApiPolicy',
 }
-
 export enum APP_MESH {
   CREATE_MESH = 'appmesh:CreateMesh',
   CREATE_ROUTE = 'appmesh:CreateRoute',
@@ -5277,7 +5134,6 @@ export enum APP_MESH {
   UPDATE_VIRTUAL_ROUTER = 'appmesh:UpdateVirtualRouter',
   UPDATE_VIRTUAL_SERVICE = 'appmesh:UpdateVirtualService',
 }
-
 export enum DATABASE_QUERY_METADATA_SERVICE {
   CREATE_FAVORITE_QUERY = 'dbqms:CreateFavoriteQuery',
   CREATE_QUERY_HISTORY = 'dbqms:CreateQueryHistory',
@@ -5289,7 +5145,6 @@ export enum DATABASE_QUERY_METADATA_SERVICE {
   UPDATE_FAVORITE_QUERY = 'dbqms:UpdateFavoriteQuery',
   UPDATE_QUERY_HISTORY = 'dbqms:UpdateQueryHistory',
 }
-
 export enum MANAGED_STREAMING_FOR_KAFKA {
   CREATE_CLUSTER = 'kafka:CreateCluster',
   CREATE_CONFIGURATION = 'kafka:CreateConfiguration',
@@ -5311,7 +5166,6 @@ export enum MANAGED_STREAMING_FOR_KAFKA {
   UPDATE_CLUSTER_CONFIGURATION = 'kafka:UpdateClusterConfiguration',
   UPDATE_MONITORING = 'kafka:UpdateMonitoring',
 }
-
 export enum CODEGURU_REVIEWER {
   ASSOCIATE_REPOSITORY = 'codeguru-reviewer:AssociateRepository',
   CREATE_CONNECTION_TOKEN = 'codeguru-reviewer:CreateConnectionToken',
@@ -5321,7 +5175,6 @@ export enum CODEGURU_REVIEWER {
   LIST_REPOSITORY_ASSOCIATIONS = 'codeguru-reviewer:ListRepositoryAssociations',
   LIST_THIRD_PARTY_REPOSITORIES = 'codeguru-reviewer:ListThirdPartyRepositories',
 }
-
 export enum PINPOINT_SMS_AND_VOICE_SERVICE {
   CREATE_CONFIGURATION_SET = 'sms-voice:CreateConfigurationSet',
   CREATE_CONFIGURATION_SET_EVENT_DESTINATION = 'sms-voice:CreateConfigurationSetEventDestination',
@@ -5332,7 +5185,6 @@ export enum PINPOINT_SMS_AND_VOICE_SERVICE {
   SEND_VOICE_MESSAGE = 'sms-voice:SendVoiceMessage',
   UPDATE_CONFIGURATION_SET_EVENT_DESTINATION = 'sms-voice:UpdateConfigurationSetEventDestination',
 }
-
 export enum CLOUDWATCH {
   DELETE_ALARMS = 'cloudwatch:DeleteAlarms',
   DELETE_ANOMALY_DETECTOR = 'cloudwatch:DeleteAnomalyDetector',
@@ -5364,7 +5216,6 @@ export enum CLOUDWATCH {
   TAG_RESOURCE = 'cloudwatch:TagResource',
   UNTAG_RESOURCE = 'cloudwatch:UntagResource',
 }
-
 export enum EC2_AUTO_SCALING {
   ATTACH_INSTANCES = 'autoscaling:AttachInstances',
   ATTACH_LOAD_BALANCER_TARGET_GROUPS = 'autoscaling:AttachLoadBalancerTargetGroups',
@@ -5421,7 +5272,6 @@ export enum EC2_AUTO_SCALING {
   TERMINATE_INSTANCE_IN_AUTO_SCALING_GROUP = 'autoscaling:TerminateInstanceInAutoScalingGroup',
   UPDATE_AUTO_SCALING_GROUP = 'autoscaling:UpdateAutoScalingGroup',
 }
-
 export enum SNOWBALL {
   CANCEL_CLUSTER = 'snowball:CancelCluster',
   CANCEL_JOB = 'snowball:CancelJob',
@@ -5441,7 +5291,6 @@ export enum SNOWBALL {
   UPDATE_CLUSTER = 'snowball:UpdateCluster',
   UPDATE_JOB = 'snowball:UpdateJob',
 }
-
 export enum SHIELD {
   ASSOCIATE_DRT_LOG_BUCKET = 'shield:AssociateDRTLogBucket',
   ASSOCIATE_DRT_ROLE = 'shield:AssociateDRTRole',
@@ -5462,7 +5311,6 @@ export enum SHIELD {
   UPDATE_EMERGENCY_CONTACT_SETTINGS = 'shield:UpdateEmergencyContactSettings',
   UPDATE_SUBSCRIPTION = 'shield:UpdateSubscription',
 }
-
 export enum SECRETS_MANAGER {
   CANCEL_ROTATE_SECRET = 'secretsmanager:CancelRotateSecret',
   CREATE_SECRET = 'secretsmanager:CreateSecret',
@@ -5483,7 +5331,6 @@ export enum SECRETS_MANAGER {
   UPDATE_SECRET = 'secretsmanager:UpdateSecret',
   UPDATE_SECRET_VERSION_STAGE = 'secretsmanager:UpdateSecretVersionStage',
 }
-
 export enum APPLICATION_AUTO_SCALING {
   DELETE_SCALING_POLICY = 'application-autoscaling:DeleteScalingPolicy',
   DELETE_SCHEDULED_ACTION = 'application-autoscaling:DeleteScheduledAction',
@@ -5496,7 +5343,6 @@ export enum APPLICATION_AUTO_SCALING {
   PUT_SCHEDULED_ACTION = 'application-autoscaling:PutScheduledAction',
   REGISTER_SCALABLE_TARGET = 'application-autoscaling:RegisterScalableTarget',
 }
-
 export enum FSX {
   CANCEL_DATA_REPOSITORY_TASK = 'fsx:CancelDataRepositoryTask',
   CREATE_BACKUP = 'fsx:CreateBackup',
@@ -5513,7 +5359,6 @@ export enum FSX {
   UNTAG_RESOURCE = 'fsx:UntagResource',
   UPDATE_FILE_SYSTEM = 'fsx:UpdateFileSystem',
 }
-
 export enum AMPLIFY {
   CREATE_APP = 'amplify:CreateApp',
   CREATE_BACKEND_ENVIRONMENT = 'amplify:CreateBackendEnvironment',
@@ -5552,7 +5397,6 @@ export enum AMPLIFY {
   UPDATE_DOMAIN_ASSOCIATION = 'amplify:UpdateDomainAssociation',
   UPDATE_WEB_HOOK = 'amplify:UpdateWebHook',
 }
-
 export enum APP_MESH_PREVIEW {
   CREATE_MESH = 'appmesh-preview:CreateMesh',
   CREATE_ROUTE = 'appmesh-preview:CreateRoute',
@@ -5581,7 +5425,6 @@ export enum APP_MESH_PREVIEW {
   UPDATE_VIRTUAL_ROUTER = 'appmesh-preview:UpdateVirtualRouter',
   UPDATE_VIRTUAL_SERVICE = 'appmesh-preview:UpdateVirtualService',
 }
-
 export enum KINESIS_VIDEO_STREAMS {
   CONNECT_AS_MASTER = 'kinesisvideo:ConnectAsMaster',
   CONNECT_AS_VIEWER = 'kinesisvideo:ConnectAsViewer',
@@ -5614,13 +5457,11 @@ export enum KINESIS_VIDEO_STREAMS {
   UPDATE_SIGNALING_CHANNEL = 'kinesisvideo:UpdateSignalingChannel',
   UPDATE_STREAM = 'kinesisvideo:UpdateStream',
 }
-
 export enum API_GATEWAY {
   INVALIDATE_CACHE = 'execute-api:InvalidateCache',
   INVOKE = 'execute-api:Invoke',
   MANAGE_CONNECTIONS = 'execute-api:ManageConnections',
 }
-
 export enum ELEMENTAL_MEDIALIVE {
   BATCH_UPDATE_SCHEDULE = 'medialive:BatchUpdateSchedule',
   CREATE_CHANNEL = 'medialive:CreateChannel',
@@ -5660,7 +5501,6 @@ export enum ELEMENTAL_MEDIALIVE {
   UPDATE_MULTIPLEX = 'medialive:UpdateMultiplex',
   UPDATE_RESERVATION = 'medialive:UpdateReservation',
 }
-
 export enum KEY_MANAGEMENT_SERVICE {
   CANCEL_KEY_DELETION = 'kms:CancelKeyDeletion',
   CONNECT_CUSTOM_KEY_STORE = 'kms:ConnectCustomKeyStore',
@@ -5710,7 +5550,6 @@ export enum KEY_MANAGEMENT_SERVICE {
   UPDATE_KEY_DESCRIPTION = 'kms:UpdateKeyDescription',
   VERIFY = 'kms:Verify',
 }
-
 export enum CLOUDHSM {
   ADD_TAGS_TO_RESOURCE = 'cloudhsm:AddTagsToResource',
   COPY_BACKUP_TO_REGION = 'cloudhsm:CopyBackupToRegion',
@@ -5744,11 +5583,9 @@ export enum CLOUDHSM {
   TAG_RESOURCE = 'cloudhsm:TagResource',
   UNTAG_RESOURCE = 'cloudhsm:UntagResource',
 }
-
 export enum CODEGURU {
   GET_CODE_GURU_FREE_TRIAL_SUMMARY = 'codeguru:GetCodeGuruFreeTrialSummary',
 }
-
 export enum EC2 {
   ACCEPT_RESERVED_INSTANCES_EXCHANGE_QUOTE = 'ec2:AcceptReservedInstancesExchangeQuote',
   ACCEPT_TRANSIT_GATEWAY_PEERING_ATTACHMENT = 'ec2:AcceptTransitGatewayPeeringAttachment',
@@ -6144,7 +5981,6 @@ export enum EC2 {
   UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_INGRESS = 'ec2:UpdateSecurityGroupRuleDescriptionsIngress',
   WITHDRAW_BYOIP_CIDR = 'ec2:WithdrawByoipCidr',
 }
-
 export enum IMPORT_EXPORT_DISK_SERVICE {
   CANCEL_JOB = 'importexport:CancelJob',
   CREATE_JOB = 'importexport:CreateJob',
@@ -6153,7 +5989,6 @@ export enum IMPORT_EXPORT_DISK_SERVICE {
   LIST_JOBS = 'importexport:ListJobs',
   UPDATE_JOB = 'importexport:UpdateJob',
 }
-
 export enum DATA_PIPELINE {
   ACTIVATE_PIPELINE = 'datapipeline:ActivatePipeline',
   ADD_TAGS = 'datapipeline:AddTags',
@@ -6177,7 +6012,6 @@ export enum DATA_PIPELINE {
   SET_TASK_STATUS = 'datapipeline:SetTaskStatus',
   VALIDATE_PIPELINE_DEFINITION = 'datapipeline:ValidatePipelineDefinition',
 }
-
 export enum SERVER_MIGRATION_SERVICE {
   CREATE_APP = 'sms:CreateApp',
   CREATE_REPLICATION_JOB = 'sms:CreateReplicationJob',
@@ -6210,7 +6044,6 @@ export enum SERVER_MIGRATION_SERVICE {
   UPDATE_APP = 'sms:UpdateApp',
   UPDATE_REPLICATION_JOB = 'sms:UpdateReplicationJob',
 }
-
 export enum CLOUDFORMATION {
   CANCEL_UPDATE_STACK = 'cloudformation:CancelUpdateStack',
   CONTINUE_UPDATE_ROLLBACK = 'cloudformation:ContinueUpdateRollback',
@@ -6270,11 +6103,9 @@ export enum CLOUDFORMATION {
   UPDATE_TERMINATION_PROTECTION = 'cloudformation:UpdateTerminationProtection',
   VALIDATE_TEMPLATE = 'cloudformation:ValidateTemplate',
 }
-
 export enum WORKMAIL_MESSAGE_FLOW {
   GET_RAW_MESSAGE_CONTENT = 'workmailmessageflow:GetRawMessageContent',
 }
-
 export enum CHATBOT {
   CREATE_CHIME_WEBHOOK_CONFIGURATION = 'chatbot:CreateChimeWebhookConfiguration',
   CREATE_SLACK_CHANNEL_CONFIGURATION = 'chatbot:CreateSlackChannelConfiguration',
@@ -6289,7 +6120,6 @@ export enum CHATBOT {
   UPDATE_CHIME_WEBHOOK_CONFIGURATION = 'chatbot:UpdateChimeWebhookConfiguration',
   UPDATE_SLACK_CHANNEL_CONFIGURATION = 'chatbot:UpdateSlackChannelConfiguration',
 }
-
 export enum HEALTH_APIS_AND_NOTIFICATIONS {
   DESCRIBE_AFFECTED_ACCOUNTS_FOR_ORGANIZATION = 'health:DescribeAffectedAccountsForOrganization',
   DESCRIBE_AFFECTED_ENTITIES = 'health:DescribeAffectedEntities',
@@ -6305,7 +6135,6 @@ export enum HEALTH_APIS_AND_NOTIFICATIONS {
   DISABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION = 'health:DisableHealthServiceAccessForOrganization',
   ENABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION = 'health:EnableHealthServiceAccessForOrganization',
 }
-
 export enum OUTPOSTS {
   CREATE_OUTPOST = 'outposts:CreateOutpost',
   GET_OUTPOST = 'outposts:GetOutpost',
@@ -6313,7 +6142,6 @@ export enum OUTPOSTS {
   LIST_OUTPOSTS = 'outposts:ListOutposts',
   LIST_SITES = 'outposts:ListSites',
 }
-
 export enum GAMELIFT {
   ACCEPT_MATCH = 'gamelift:AcceptMatch',
   CREATE_ALIAS = 'gamelift:CreateAlias',
@@ -6392,7 +6220,6 @@ export enum GAMELIFT {
   UPDATE_SCRIPT = 'gamelift:UpdateScript',
   VALIDATE_MATCHMAKING_RULE_SET = 'gamelift:ValidateMatchmakingRuleSet',
 }
-
 export enum OPSWORKS_CONFIGURATION_MANAGEMENT {
   ASSOCIATE_NODE = 'opsworks-cm:AssociateNode',
   CREATE_BACKUP = 'opsworks-cm:CreateBackup',
@@ -6410,15 +6237,12 @@ export enum OPSWORKS_CONFIGURATION_MANAGEMENT {
   UPDATE_SERVER = 'opsworks-cm:UpdateServer',
   UPDATE_SERVER_ENGINE_ATTRIBUTES = 'opsworks-cm:UpdateServerEngineAttributes',
 }
-
 export enum EC2_INSTANCE_CONNECT {
   SEND_SSH_PUBLIC_KEY = 'ec2-instance-connect:SendSSHPublicKey',
 }
-
 export enum RDS_IAM_AUTHENTICATION {
   CONNECT = 'rds-db:connect',
 }
-
 export enum APPLICATION_DISCOVERY {
   ASSOCIATE_CONFIGURATION_ITEMS_TO_APPLICATION = 'discovery:AssociateConfigurationItemsToApplication',
   BATCH_DELETE_IMPORT_DATA = 'discovery:BatchDeleteImportData',
@@ -6446,13 +6270,11 @@ export enum APPLICATION_DISCOVERY {
   STOP_DATA_COLLECTION_BY_AGENT_IDS = 'discovery:StopDataCollectionByAgentIds',
   UPDATE_APPLICATION = 'discovery:UpdateApplication',
 }
-
 export enum ELASTIC_BLOCK_STORE {
   GET_SNAPSHOT_BLOCK = 'ebs:GetSnapshotBlock',
   LIST_CHANGED_BLOCKS = 'ebs:ListChangedBlocks',
   LIST_SNAPSHOT_BLOCKS = 'ebs:ListSnapshotBlocks',
 }
-
 export enum CODECOMMIT {
   ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORY = 'codecommit:AssociateApprovalRuleTemplateWithRepository',
   BATCH_ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORIES = 'codecommit:BatchAssociateApprovalRuleTemplateWithRepositories',
@@ -6541,7 +6363,6 @@ export enum CODECOMMIT {
   UPDATE_REPOSITORY_NAME = 'codecommit:UpdateRepositoryName',
   UPLOAD_ARCHIVE = 'codecommit:UploadArchive',
 }
-
 export enum CODEGURU_PROFILER {
   CONFIGURE_AGENT = 'codeguru-profiler:ConfigureAgent',
   CREATE_PROFILING_GROUP = 'codeguru-profiler:CreateProfilingGroup',
@@ -6559,7 +6380,6 @@ export enum CODEGURU_PROFILER {
   REMOVE_PERMISSION = 'codeguru-profiler:RemovePermission',
   UPDATE_PROFILING_GROUP = 'codeguru-profiler:UpdateProfilingGroup',
 }
-
 export enum SNS {
   ADD_PERMISSION = 'sns:AddPermission',
   CHECK_IF_PHONE_NUMBER_IS_OPTED_OUT = 'sns:CheckIfPhoneNumberIsOptedOut',
@@ -6595,7 +6415,6 @@ export enum SNS {
   UNSUBSCRIBE = 'sns:Unsubscribe',
   UNTAG_RESOURCE = 'sns:UntagResource',
 }
-
 export enum COGNITO_USER_POOLS {
   ADD_CUSTOM_ATTRIBUTES = 'cognito-idp:AddCustomAttributes',
   ADMIN_ADD_USER_TO_GROUP = 'cognito-idp:AdminAddUserToGroup',
@@ -6698,7 +6517,6 @@ export enum COGNITO_USER_POOLS {
   VERIFY_SOFTWARE_TOKEN = 'cognito-idp:VerifySoftwareToken',
   VERIFY_USER_ATTRIBUTE = 'cognito-idp:VerifyUserAttribute',
 }
-
 export enum ELASTIC_BEANSTALK {
   ABORT_ENVIRONMENT_UPDATE = 'elasticbeanstalk:AbortEnvironmentUpdate',
   ADD_TAGS = 'elasticbeanstalk:AddTags',
@@ -6747,7 +6565,6 @@ export enum ELASTIC_BEANSTALK {
   UPDATE_ENVIRONMENT = 'elasticbeanstalk:UpdateEnvironment',
   VALIDATE_CONFIGURATION_SETTINGS = 'elasticbeanstalk:ValidateConfigurationSettings',
 }
-
 export enum CLOUDWATCH_APPLICATION_INSIGHTS {
   CREATE_APPLICATION = 'applicationinsights:CreateApplication',
   CREATE_COMPONENT = 'applicationinsights:CreateComponent',
@@ -6767,7 +6584,6 @@ export enum CLOUDWATCH_APPLICATION_INSIGHTS {
   UPDATE_COMPONENT = 'applicationinsights:UpdateComponent',
   UPDATE_COMPONENT_CONFIGURATION = 'applicationinsights:UpdateComponentConfiguration',
 }
-
 export enum ELASTIC_LOAD_BALANCING_V2 {
   ADD_LISTENER_CERTIFICATES = 'elasticloadbalancing:AddListenerCertificates',
   ADD_TAGS = 'elasticloadbalancing:AddTags',
@@ -6805,7 +6621,6 @@ export enum ELASTIC_LOAD_BALANCING_V2 {
   SET_SUBNETS = 'elasticloadbalancing:SetSubnets',
   SET_WEB_ACL = 'elasticloadbalancing:SetWebAcl',
 }
-
 export enum ELASTIC_LOAD_BALANCING {
   ADD_TAGS = 'elasticloadbalancing:AddTags',
   APPLY_SECURITY_GROUPS_TO_LOAD_BALANCER = 'elasticloadbalancing:ApplySecurityGroupsToLoadBalancer',
@@ -6836,7 +6651,6 @@ export enum ELASTIC_LOAD_BALANCING {
   SET_LOAD_BALANCER_POLICIES_FOR_BACKEND_SERVER = 'elasticloadbalancing:SetLoadBalancerPoliciesForBackendServer',
   SET_LOAD_BALANCER_POLICIES_OF_LISTENER = 'elasticloadbalancing:SetLoadBalancerPoliciesOfListener',
 }
-
 export enum TRANSLATE {
   DELETE_TERMINOLOGY = 'translate:DeleteTerminology',
   DESCRIBE_TEXT_TRANSLATION_JOB = 'translate:DescribeTextTranslationJob',
@@ -6848,7 +6662,6 @@ export enum TRANSLATE {
   STOP_TEXT_TRANSLATION_JOB = 'translate:StopTextTranslationJob',
   TRANSLATE_TEXT = 'translate:TranslateText',
 }
-
 export enum WAF_REGIONAL {
   ASSOCIATE_WEB_ACL = 'waf-regional:AssociateWebACL',
   CREATE_BYTE_MATCH_SET = 'waf-regional:CreateByteMatchSet',
@@ -6931,7 +6744,6 @@ export enum WAF_REGIONAL {
   UPDATE_WEB_ACL = 'waf-regional:UpdateWebACL',
   UPDATE_XSS_MATCH_SET = 'waf-regional:UpdateXssMatchSet',
 }
-
 export enum ELASTIC_CONTAINER_SERVICE {
   CREATE_CLUSTER = 'ecs:CreateCluster',
   CREATE_SERVICE = 'ecs:CreateService',
@@ -6980,7 +6792,6 @@ export enum ELASTIC_CONTAINER_SERVICE {
   UPDATE_SERVICE_PRIMARY_TASK_SET = 'ecs:UpdateServicePrimaryTaskSet',
   UPDATE_TASK_SET = 'ecs:UpdateTaskSet',
 }
-
 export enum ELASTIC_CONTAINER_REGISTRY {
   BATCH_CHECK_LAYER_AVAILABILITY = 'ecr:BatchCheckLayerAvailability',
   BATCH_DELETE_IMAGE = 'ecr:BatchDeleteImage',
@@ -7012,7 +6823,6 @@ export enum ELASTIC_CONTAINER_REGISTRY {
   UNTAG_RESOURCE = 'ecr:UntagResource',
   UPLOAD_LAYER_PART = 'ecr:UploadLayerPart',
 }
-
 export enum DYNAMODB_ACCELERATOR_DAX {
   BATCH_GET_ITEM = 'dax:BatchGetItem',
   BATCH_WRITE_ITEM = 'dax:BatchWriteItem',
@@ -7045,7 +6855,6 @@ export enum DYNAMODB_ACCELERATOR_DAX {
   UPDATE_PARAMETER_GROUP = 'dax:UpdateParameterGroup',
   UPDATE_SUBNET_GROUP = 'dax:UpdateSubnetGroup',
 }
-
 export enum RESOURCE_GROUP_TAGGING_API {
   DESCRIBE_REPORT_CREATION = 'tag:DescribeReportCreation',
   GET_COMPLIANCE_SUMMARY = 'tag:GetComplianceSummary',
@@ -7056,7 +6865,6 @@ export enum RESOURCE_GROUP_TAGGING_API {
   TAG_RESOURCES = 'tag:TagResources',
   UNTAG_RESOURCES = 'tag:UntagResources',
 }
-
 export enum CLOUDWATCH_LOGS {
   ASSOCIATE_KMS_KEY = 'logs:AssociateKmsKey',
   CANCEL_EXPORT_TASK = 'logs:CancelExportTask',
@@ -7103,7 +6911,6 @@ export enum CLOUDWATCH_LOGS {
   UNTAG_LOG_GROUP = 'logs:UntagLogGroup',
   UPDATE_LOG_DELIVERY = 'logs:UpdateLogDelivery',
 }
-
 export enum SERVICE_CATALOG {
   ACCEPT_PORTFOLIO_SHARE = 'servicecatalog:AcceptPortfolioShare',
   ASSOCIATE_BUDGET_WITH_RESOURCE = 'servicecatalog:AssociateBudgetWithResource',
@@ -7189,7 +6996,6 @@ export enum SERVICE_CATALOG {
   UPDATE_SERVICE_ACTION = 'servicecatalog:UpdateServiceAction',
   UPDATE_TAG_OPTION = 'servicecatalog:UpdateTagOption',
 }
-
 export enum MQ {
   CREATE_BROKER = 'mq:CreateBroker',
   CREATE_CONFIGURATION = 'mq:CreateConfiguration',
@@ -7214,7 +7020,6 @@ export enum MQ {
   UPDATE_CONFIGURATION = 'mq:UpdateConfiguration',
   UPDATE_USER = 'mq:UpdateUser',
 }
-
 export enum PERSONALIZE {
   CREATE_CAMPAIGN = 'personalize:CreateCampaign',
   CREATE_DATASET = 'personalize:CreateDataset',
@@ -7256,7 +7061,6 @@ export enum PERSONALIZE {
   PUT_EVENTS = 'personalize:PutEvents',
   UPDATE_CAMPAIGN = 'personalize:UpdateCampaign',
 }
-
 export enum CLOUD9 {
   CREATE_ENVIRONMENT_EC_2 = 'cloud9:CreateEnvironmentEC2',
   CREATE_ENVIRONMENT_MEMBERSHIP = 'cloud9:CreateEnvironmentMembership',
@@ -7274,7 +7078,6 @@ export enum CLOUD9 {
   UPDATE_ENVIRONMENT_MEMBERSHIP = 'cloud9:UpdateEnvironmentMembership',
   UPDATE_USER_SETTINGS = 'cloud9:UpdateUserSettings',
 }
-
 export enum DETECTIVE {
   ACCEPT_INVITATION = 'detective:AcceptInvitation',
   CREATE_GRAPH = 'detective:CreateGraph',
@@ -7294,7 +7097,6 @@ export enum DETECTIVE {
   SEARCH_GRAPH = 'detective:SearchGraph',
   START_MONITORING_MEMBER = 'detective:StartMonitoringMember',
 }
-
 export enum TRANSFER_FOR_SFTP {
   CREATE_SERVER = 'transfer:CreateServer',
   CREATE_USER = 'transfer:CreateUser',
@@ -7315,7 +7117,6 @@ export enum TRANSFER_FOR_SFTP {
   UPDATE_SERVER = 'transfer:UpdateServer',
   UPDATE_USER = 'transfer:UpdateUser',
 }
-
 export enum IAM_ACCESS_ANALYZER {
   CREATE_ANALYZER = 'access-analyzer:CreateAnalyzer',
   CREATE_ARCHIVE_RULE = 'access-analyzer:CreateArchiveRule',
@@ -7336,7 +7137,6 @@ export enum IAM_ACCESS_ANALYZER {
   UPDATE_ARCHIVE_RULE = 'access-analyzer:UpdateArchiveRule',
   UPDATE_FINDINGS = 'access-analyzer:UpdateFindings',
 }
-
 export enum TEXTRACT {
   ANALYZE_DOCUMENT = 'textract:AnalyzeDocument',
   DETECT_DOCUMENT_TEXT = 'textract:DetectDocumentText',
@@ -7345,18 +7145,15 @@ export enum TEXTRACT {
   START_DOCUMENT_ANALYSIS = 'textract:StartDocumentAnalysis',
   START_DOCUMENT_TEXT_DETECTION = 'textract:StartDocumentTextDetection',
 }
-
 export enum APPLICATION_DISCOVERY_ARSENAL {
   REGISTER_ON_PREMISES_AGENT = 'arsenal:RegisterOnPremisesAgent',
 }
-
 export enum GROUNDTRUTH_LABELING {
   DESCRIBE_CONSOLE_JOB = 'groundtruthlabeling:DescribeConsoleJob',
   LIST_DATASET_OBJECTS = 'groundtruthlabeling:ListDatasetObjects',
   RUN_FILTER_OR_SAMPLE_DATASET_JOB = 'groundtruthlabeling:RunFilterOrSampleDatasetJob',
   RUN_GENERATE_MANIFEST_BY_CRAWLING_JOB = 'groundtruthlabeling:RunGenerateManifestByCrawlingJob',
 }
-
 export enum ELEMENTAL_MEDIASTORE {
   CREATE_CONTAINER = 'mediastore:CreateContainer',
   DELETE_CONTAINER = 'mediastore:DeleteContainer',
@@ -7385,7 +7182,6 @@ export enum ELEMENTAL_MEDIASTORE {
   TAG_RESOURCE = 'mediastore:TagResource',
   UNTAG_RESOURCE = 'mediastore:UntagResource',
 }
-
 export enum IOT_1CLICK {
   ASSOCIATE_DEVICE_WITH_PLACEMENT = 'iot1click:AssociateDeviceWithPlacement',
   CLAIM_DEVICES_BY_CLAIM_CODE = 'iot1click:ClaimDevicesByClaimCode',
@@ -7414,7 +7210,6 @@ export enum IOT_1CLICK {
   UPDATE_PLACEMENT = 'iot1click:UpdatePlacement',
   UPDATE_PROJECT = 'iot1click:UpdateProject',
 }
-
 export enum CODEPIPELINE {
   ACKNOWLEDGE_JOB = 'codepipeline:AcknowledgeJob',
   ACKNOWLEDGE_THIRD_PARTY_JOB = 'codepipeline:AcknowledgeThirdPartyJob',
@@ -7454,7 +7249,6 @@ export enum CODEPIPELINE {
   UNTAG_RESOURCE = 'codepipeline:UntagResource',
   UPDATE_PIPELINE = 'codepipeline:UpdatePipeline',
 }
-
 export enum SECURITY_HUB {
   ACCEPT_INVITATION = 'securityhub:AcceptInvitation',
   BATCH_DISABLE_STANDARDS = 'securityhub:BatchDisableStandards',
@@ -7499,7 +7293,6 @@ export enum SECURITY_HUB {
   UPDATE_INSIGHT = 'securityhub:UpdateInsight',
   UPDATE_STANDARDS_CONTROL = 'securityhub:UpdateStandardsControl',
 }
-
 export enum EC2_IMAGE_BUILDER {
   CANCEL_IMAGE_CREATION = 'imagebuilder:CancelImageCreation',
   CREATE_COMPONENT = 'imagebuilder:CreateComponent',
@@ -7542,7 +7335,6 @@ export enum EC2_IMAGE_BUILDER {
   UPDATE_IMAGE_PIPELINE = 'imagebuilder:UpdateImagePipeline',
   UPDATE_INFRASTRUCTURE_CONFIGURATION = 'imagebuilder:UpdateInfrastructureConfiguration',
 }
-
 export enum SQS {
   ADD_PERMISSION = 'sqs:AddPermission',
   CHANGE_MESSAGE_VISIBILITY = 'sqs:ChangeMessageVisibility',
@@ -7565,7 +7357,6 @@ export enum SQS {
   TAG_QUEUE = 'sqs:TagQueue',
   UNTAG_QUEUE = 'sqs:UntagQueue',
 }
-
 export enum CLOUD_MAP {
   CREATE_HTTP_NAMESPACE = 'servicediscovery:CreateHttpNamespace',
   CREATE_PRIVATE_DNS_NAMESPACE = 'servicediscovery:CreatePrivateDnsNamespace',
@@ -7588,7 +7379,6 @@ export enum CLOUD_MAP {
   UPDATE_INSTANCE_CUSTOM_HEALTH_STATUS = 'servicediscovery:UpdateInstanceCustomHealthStatus',
   UPDATE_SERVICE = 'servicediscovery:UpdateService',
 }
-
 export enum COMPUTE_OPTIMIZER {
   GET_AUTO_SCALING_GROUP_RECOMMENDATIONS = 'compute-optimizer:GetAutoScalingGroupRecommendations',
   GET_EC_2_INSTANCE_RECOMMENDATIONS = 'compute-optimizer:GetEC2InstanceRecommendations',
@@ -7597,7 +7387,6 @@ export enum COMPUTE_OPTIMIZER {
   GET_RECOMMENDATION_SUMMARIES = 'compute-optimizer:GetRecommendationSummaries',
   UPDATE_ENROLLMENT_STATUS = 'compute-optimizer:UpdateEnrollmentStatus',
 }
-
 export enum GLACIER {
   ABORT_MULTIPART_UPLOAD = 'glacier:AbortMultipartUpload',
   ABORT_VAULT_LOCK = 'glacier:AbortVaultLock',
@@ -7633,7 +7422,6 @@ export enum GLACIER {
   UPLOAD_ARCHIVE = 'glacier:UploadArchive',
   UPLOAD_MULTIPART_PART = 'glacier:UploadMultipartPart',
 }
-
 export enum REKOGNITION {
   COMPARE_FACES = 'rekognition:CompareFaces',
   CREATE_COLLECTION = 'rekognition:CreateCollection',
@@ -7681,7 +7469,6 @@ export enum REKOGNITION {
   STOP_PROJECT_VERSION = 'rekognition:StopProjectVersion',
   STOP_STREAM_PROCESSOR = 'rekognition:StopStreamProcessor',
 }
-
 export enum LAUNCH_WIZARD {
   DELETE_APP = 'launchwizard:DeleteApp',
   DESCRIBE_PROVISIONED_APP = 'launchwizard:DescribeProvisionedApp',
@@ -7692,7 +7479,6 @@ export enum LAUNCH_WIZARD {
   LIST_PROVISIONED_APPS = 'launchwizard:ListProvisionedApps',
   START_PROVISIONING = 'launchwizard:StartProvisioning',
 }
-
 export enum ELEMENTAL_MEDIACONVERT {
   ASSOCIATE_CERTIFICATE = 'mediaconvert:AssociateCertificate',
   CANCEL_JOB = 'mediaconvert:CancelJob',
@@ -7720,7 +7506,6 @@ export enum ELEMENTAL_MEDIACONVERT {
   UPDATE_PRESET = 'mediaconvert:UpdatePreset',
   UPDATE_QUEUE = 'mediaconvert:UpdateQueue',
 }
-
 export enum SERVICE_QUOTAS {
   ASSOCIATE_SERVICE_QUOTA_TEMPLATE = 'servicequotas:AssociateServiceQuotaTemplate',
   DELETE_SERVICE_QUOTA_INCREASE_REQUEST_FROM_TEMPLATE = 'servicequotas:DeleteServiceQuotaIncreaseRequestFromTemplate',
@@ -7739,7 +7524,6 @@ export enum SERVICE_QUOTAS {
   PUT_SERVICE_QUOTA_INCREASE_REQUEST_INTO_TEMPLATE = 'servicequotas:PutServiceQuotaIncreaseRequestIntoTemplate',
   REQUEST_SERVICE_QUOTA_INCREASE = 'servicequotas:RequestServiceQuotaIncrease',
 }
-
 export enum INSPECTOR {
   ADD_ATTRIBUTES_TO_FINDINGS = 'inspector:AddAttributesToFindings',
   CREATE_ASSESSMENT_TARGET = 'inspector:CreateAssessmentTarget',
@@ -7774,7 +7558,6 @@ export enum INSPECTOR {
   UNSUBSCRIBE_FROM_EVENT = 'inspector:UnsubscribeFromEvent',
   UPDATE_ASSESSMENT_TARGET = 'inspector:UpdateAssessmentTarget',
 }
-
 export enum ROBOMAKER {
   BATCH_DESCRIBE_SIMULATION_JOB = 'robomaker:BatchDescribeSimulationJob',
   CANCEL_DEPLOYMENT_JOB = 'robomaker:CancelDeploymentJob',
@@ -7817,7 +7600,6 @@ export enum ROBOMAKER {
   UPDATE_ROBOT_APPLICATION = 'robomaker:UpdateRobotApplication',
   UPDATE_SIMULATION_APPLICATION = 'robomaker:UpdateSimulationApplication',
 }
-
 export enum QLDB {
   CREATE_LEDGER = 'qldb:CreateLedger',
   DELETE_LEDGER = 'qldb:DeleteLedger',
@@ -7839,7 +7621,6 @@ export enum QLDB {
   UNTAG_RESOURCE = 'qldb:UntagResource',
   UPDATE_LEDGER = 'qldb:UpdateLedger',
 }
-
 export enum CODESTAR {
   ASSOCIATE_TEAM_MEMBER = 'codestar:AssociateTeamMember',
   CREATE_PROJECT = 'codestar:CreateProject',
@@ -7863,7 +7644,6 @@ export enum CODESTAR {
   UPDATE_TEAM_MEMBER = 'codestar:UpdateTeamMember',
   UPDATE_USER_PROFILE = 'codestar:UpdateUserProfile',
 }
-
 export enum DIRECT_CONNECT {
   ACCEPT_DIRECT_CONNECT_GATEWAY_ASSOCIATION_PROPOSAL = 'directconnect:AcceptDirectConnectGatewayAssociationProposal',
   ALLOCATE_CONNECTION_ON_INTERCONNECT = 'directconnect:AllocateConnectionOnInterconnect',
@@ -7919,11 +7699,9 @@ export enum DIRECT_CONNECT {
   UPDATE_LAG = 'directconnect:UpdateLag',
   UPDATE_VIRTUAL_INTERFACE_ATTRIBUTES = 'directconnect:UpdateVirtualInterfaceAttributes',
 }
-
 export enum NEPTUNE {
   CONNECT = 'neptune-db:connect',
 }
-
 export enum DATASYNC {
   CANCEL_TASK_EXECUTION = 'datasync:CancelTaskExecution',
   CREATE_AGENT = 'datasync:CreateAgent',
@@ -7953,7 +7731,6 @@ export enum DATASYNC {
   UPDATE_AGENT = 'datasync:UpdateAgent',
   UPDATE_TASK = 'datasync:UpdateTask',
 }
-
 export enum ORGANIZATIONS {
   ACCEPT_HANDSHAKE = 'organizations:AcceptHandshake',
   ATTACH_POLICY = 'organizations:AttachPolicy',
@@ -8003,12 +7780,10 @@ export enum ORGANIZATIONS {
   UPDATE_ORGANIZATIONAL_UNIT = 'organizations:UpdateOrganizationalUnit',
   UPDATE_POLICY = 'organizations:UpdatePolicy',
 }
-
 export enum PERFORMANCE_INSIGHTS {
   DESCRIBE_DIMENSION_KEYS = 'pi:DescribeDimensionKeys',
   GET_RESOURCE_METRICS = 'pi:GetResourceMetrics',
 }
-
 export enum KINESIS_ANALYTICS_V2 {
   ADD_APPLICATION_CLOUD_WATCH_LOGGING_OPTION = 'kinesisanalytics:AddApplicationCloudWatchLoggingOption',
   ADD_APPLICATION_INPUT = 'kinesisanalytics:AddApplicationInput',
@@ -8037,7 +7812,6 @@ export enum KINESIS_ANALYTICS_V2 {
   UNTAG_RESOURCE = 'kinesisanalytics:UntagResource',
   UPDATE_APPLICATION = 'kinesisanalytics:UpdateApplication',
 }
-
 export enum KINESIS_ANALYTICS {
   ADD_APPLICATION_INPUT = 'kinesisanalytics:AddApplicationInput',
   ADD_APPLICATION_OUTPUT = 'kinesisanalytics:AddApplicationOutput',
@@ -8057,10 +7831,8 @@ export enum KINESIS_ANALYTICS {
   UNTAG_RESOURCE = 'kinesisanalytics:UntagResource',
   UPDATE_APPLICATION = 'kinesisanalytics:UpdateApplication',
 }
-
 export enum ACCOUNTS {
   DISABLE_REGION = 'account:DisableRegion',
   ENABLE_REGION = 'account:EnableRegion',
   LIST_REGIONS = 'account:ListRegions',
 }
-
