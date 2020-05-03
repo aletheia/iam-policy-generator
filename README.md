@@ -1,4 +1,5 @@
 # AWS IAM Policy Generator
+
 [![npm version](https://badge.fury.io/js/iam-policy-generator.svg)](https://badge.fury.io/js/iam-policy-generator)
 [![Build Status](https://travis-ci.com/aletheia/iam-policy-generator.svg?branch=master)](https://travis-ci.com/aletheia/iam-policy-generator)
 ![David](https://img.shields.io/david/aletheia/iam-policy-generator)
@@ -12,8 +13,9 @@ This project goal is to offer simple code handlers, so developers won't have to 
 
 This library depends on `@aws-cdk/aws-iam` package because it offers a factory named `PolicyStatementFactory` to support direct CDK `PolicyStatement` generation
 
-## Getting Started 
-Install the library through 
+## Getting Started
+
+Install the library through
 
 ### Add package from NPM or Yarn
 
@@ -30,10 +32,11 @@ yarn add iam-policy-generator
 ```
 
 #### Post Install library generation
+
 After **install** phase a local script is run to pull the most updated version of AWS policies and js files are generated to provide support for intellisense.
 
 ```bash
-info: Fetching IAM policy metadata from https://awspolicygen.s3.amazonaws.com/js/policies.js 
+info: Fetching IAM policy metadata from https://awspolicygen.s3.amazonaws.com/js/policies.js
 info: Saving policy file.
 info: Generating TS file containing Supported IAM Services enum.
 info: Generating TS file containing AWS Service Policies enums.
@@ -44,44 +47,54 @@ info: library data built. Please import package and have fun!
 ## Usage
 
 ### Import factory and constants into your code
+
 IAM Policy Generator comes with a handy factory class that generates policies after being configured. The package includes also a set of constants to support policy actions autocomplete in any IDE.
 
 #### Javascript
+
 ```javascript
-const {PolicyStatementFactory, Action} = require('iam-policy-generator')
+const {PolicyStatementFactory, Action} = require('iam-policy-generator');
 ```
 
 #### Typescript
+
 ```typescript
-import {PolicyStatementFactory, Action} from 'iam-policy-generator'
+import {PolicyStatementFactory, Action} from 'iam-policy-generator';
 ```
 
 ### Use library in your code
-Actions are automatically built into library enum / constants to be used with every editor **autocomplete**. 
+
+Actions are automatically built into library enum / constants to be used with every editor **autocomplete**.
 Just import the `PolicyStatementFactory` and `Action`
 
 #### Constructor properties
+
 The easiest way to use this library is to instantiate a factory object with properties, then call `.build()` method
 
 ```javascript
 const factory = new PolicyStatementFactory({
-    effect: Effect.ALLOW | Effect.DENY,
-    resources: [/** an array of resource arns **/],
-    actions: [/** an array of strings coming from Action.<SERVICE>.<API> **/],
-  })
+  effect: Effect.ALLOW | Effect.DENY,
+  resources: [
+    /** an array of resource arns **/
+  ],
+  actions: [
+    /** an array of strings coming from Action.<SERVICE>.<API> **/
+  ],
+});
 
-const statement = factory.build()
+const statement = factory.build();
 ```
 
 #### Method modifiers
+
 Factory class stores **actions**, **resources** and **effect** in its internal state. So accessors methods are available to add statements components
 
 ```javascript
 const factory = new PolicyStatementFactory({
-    effect: Effect.ALLOW,
-    resources: ['*'],
-    actions: [Action.S3.PUT_OBJECT, Action.S3.LIST_BUCKET],
-  })
+  effect: Effect.ALLOW,
+  resources: ['*'],
+  actions: [Action.S3.PUT_OBJECT, Action.S3.LIST_BUCKET],
+});
 factory.setEffect(Effect.ALLOW | Effect.DENY);
 factory.addResource(/** a resource arn **/);
 factory.addResources(/** an array of resource arns **/);
@@ -89,51 +102,58 @@ factory.addResources(/** an array of resource arns **/);
 factory.addAction(/** an action string coming from Action.<SERVICE>.<API> **/);
 factory.addAction(/** an action **/);
 
-factory.addActions([/** an array of actions **/]);
+factory.addActions([
+  /** an array of actions **/
+]);
 
-const statement = factory.build()
+const statement = factory.build();
 ```
 
-
 #### Method chaining
+
 Factory methods support chaining, so a cleaner usage would be
 
 ```javascript
-const statement = 
-	new PolicyStatement()
-		.setEffect()
-		.addResource(/** a resource arn **/)
-		.addResources([/** an array of resource arns **/])
-		.addAction(/** an action string coming from Action.<SERVICE>.<API> **/)
-		.addActions([/** an array of actions **/])
-		.build();
+const statement = new PolicyStatement()
+  .setEffect()
+  .addResource(/** a resource arn **/)
+  .addResources([
+    /** an array of resource arns **/
+  ])
+  .addAction(/** an action string coming from Action.<SERVICE>.<API> **/)
+  .addActions([
+    /** an array of actions **/
+  ])
+  .build();
 ```
 
 ## Examples
+
 Here some examples about how to use this library to configure policies
 
 ### Policy allowing Lambda Function to access bucket objects and list buckets
+
 Define a custom policy to enable a lambda function to access objects on S3 and list buckets
 
 ```javascript
-const {Function, Runtime}  = require('@aws-cdk/aws-lambda');
-const {PolicyStatementFactory, Action} = require('iam-policy-generator')
+const {Function, Runtime} = require('@aws-cdk/aws-lambda');
+const {PolicyStatementFactory, Action} = require('iam-policy-generator');
 const {Bucket} = require('@aws-cdk/aws-s3');
 
 const storageBucket = new Bucket(this, 'storageBucket', {
-	bucketName: 'my-bucket-name',
+  bucketName: 'my-bucket-name',
 });
-    
+
 const myFunction = new Function(this, 'my-function', {
-	// function properties
-}); 
+  // function properties
+});
 
 myFunction.addToRolePolicy(
-	new PolicyStatementFactory()
-		.effect(Effect.ALLOW)
-		.addResource(storageBucket.bucketArn)
-		.actions([Action.S3.PUT_OBJECT, Action.S3.LIST_BUCKET])
-		.build()
+  new PolicyStatementFactory()
+    .effect(Effect.ALLOW)
+    .addResource(storageBucket.bucketArn)
+    .actions([Action.S3.PUT_OBJECT, Action.S3.LIST_BUCKET])
+    .build()
 );
 ```
 
