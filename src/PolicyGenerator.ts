@@ -7,7 +7,7 @@ export interface PolicyGeneratorProps {
   service: string;
   effect?: Effect | string;
   resources?: string[];
-  actionApis?: string[];
+  actions?: string[];
 }
 
 export class PolicyGenerator {
@@ -17,13 +17,13 @@ export class PolicyGenerator {
   protected service: string;
 
   constructor(props: PolicyGeneratorProps) {
-    const {service, effect, resources, actionApis} = props;
+    const {service, effect, resources, actions} = props;
     this.service = service;
     this.effect = effect ? effect : Effect.ALLOW;
     this.resources = resources || [];
     this.actions = [];
-    if (actionApis) {
-      actionApis.forEach(action => {
+    if (actions) {
+      actions.forEach(action => {
         this.addAction(action);
       });
     }
@@ -36,7 +36,12 @@ export class PolicyGenerator {
     this.resources.push(arn);
   }
 
-  addAction(api: string) {
-    this.actions.push(`${this.service}:${api}`);
+  addAction(action: string) {
+    this.actions.push(action);
+  }
+
+  buildPolicy() {
+    const {effect, resources, actions} = this;
+    return JSON.stringify({effect, resources, actions});
   }
 }
