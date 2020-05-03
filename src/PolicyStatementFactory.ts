@@ -1,7 +1,7 @@
 import {PolicyStatement, Effect as CdkIamEffect} from '@aws-cdk/aws-iam';
-import {PolicyGenerator, PolicyGeneratorProps} from './PolicyGenerator';
+import {PolicyFactory} from './PolicyFactory';
 
-export class PolicyStatementGenerator extends PolicyGenerator {
+export class PolicyStatementFactory extends PolicyFactory {
   buildPolicyStatement() {
     const iamEffect: CdkIamEffect =
       CdkIamEffect[this.effect! as keyof typeof CdkIamEffect];

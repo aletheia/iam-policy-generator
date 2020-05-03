@@ -1,5 +1,5 @@
 import * as Action from './generated/Actions';
 import {Service} from './generated/Services';
-import {PolicyGenerator} from './PolicyGenerator';
-import {PolicyStatementGenerator} from './PolicyStatementGenerator';
-export {Action, Service, PolicyGenerator, PolicyStatementGenerator};
+import {PolicyFactory} from './PolicyFactory';
+import {PolicyStatementFactory} from './PolicyStatementFactory';
+export {Action, Service, PolicyFactory, PolicyStatementFactory};

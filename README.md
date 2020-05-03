@@ -38,7 +38,7 @@ const {PolicyGenerator, API, Service} = require('iam-policy-generator');
 
 // your code here
 
-const generator = new PolicyGenerator(Service.S3);
+const generator = new PolicyFactory(Service.S3);
 generator.addAction(API.S3.LIST_BUCKET);
 generator.addAction(API.S3.PUT_OBJECT);
 ```

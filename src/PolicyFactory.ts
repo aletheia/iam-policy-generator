@@ -3,22 +3,19 @@ export enum Effect {
   DENY = 'Deny',
 }
 
-export interface PolicyGeneratorProps {
-  service: string;
+export interface PolicyFactoryProps {
   effect?: Effect | string;
   resources?: string[];
   actions?: string[];
 }
 
-export class PolicyGenerator {
+export class PolicyFactory {
   effect: string;
   resources: string[];
   actions: string[];
-  protected service: string;
 
-  constructor(props: PolicyGeneratorProps) {
-    const {service, effect, resources, actions} = props;
-    this.service = service;
+  constructor(props: PolicyFactoryProps) {
+    const {effect, resources, actions} = props;
     this.effect = effect ? effect : Effect.ALLOW;
     this.resources = resources || [];
     this.actions = [];

@@ -31,7 +31,7 @@ interface AWSServicePolicy {
   ArnFormat: string;
 }
 
-class PolicyGeneratorFactory {
+export class PolicyGenerator {
   logger: Logger;
   policyJson?: AWSPolicyJson;
 
@@ -165,7 +165,7 @@ const logger = winston.createLogger({
   ],
 });
 
-const generator = new PolicyGeneratorFactory(logger);
+const generator = new PolicyGenerator(logger);
 generator
   .fetchPolicyDescriptor(POLICY_URL)
   .then(() => {
