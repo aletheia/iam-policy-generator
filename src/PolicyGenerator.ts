@@ -1,5 +1,10 @@
+export enum Effect {
+  ALLOW = 'Allow',
+  DENY = 'Deny',
+}
+
 export class PolicyGenerator {
-  effect?: string;
+  effect: string;
   resources: string[];
   actions: string[];
   protected service: string;
@@ -11,7 +16,7 @@ export class PolicyGenerator {
     actionAPIs?: string[]
   ) {
     this.service = service;
-    this.effect = effect;
+    this.effect = effect ? effect : Effect.ALLOW;
     this.resources = resources || [];
     this.actions = [];
     if (actionAPIs) {
