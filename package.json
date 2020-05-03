@@ -26,7 +26,7 @@
   "repository": {
     "url": "https://github.com/aletheia/iam-policy-generator.git"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "dependencies": {
     "@aws-cdk/aws-iam": "^1.36.1",
     "lodash.camelcase": "^4.3.0",
