@@ -1,5 +1,5 @@
-import * as API from './generated/PolicyEnums';
-import {Service} from './generated/ServiceEnums';
-import {PolicyGenerator} from './PolicyGenerator';
-import {PolicyStatementGenerator} from './PolicyStatementGenerator';
-export {API, Service, PolicyGenerator, PolicyStatementGenerator};
+import * as Action from './generated/Actions';
+import {Service} from './generated/Services';
+import {PolicyFactory} from './PolicyFactory';
+import {PolicyStatementFactory} from './PolicyStatementFactory';
+export {Action, Service, PolicyFactory, PolicyStatementFactory};
