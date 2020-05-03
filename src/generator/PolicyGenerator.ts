@@ -129,7 +129,7 @@ export class PolicyGenerator {
         const actionName = toUpper(snakeCase(action));
         return `  ${actionName} = '${serviceString}:${action}'`;
       }).join(',\n');
-      content += actionsContent + ',\n}\n\n';
+      content += actionsContent + ',\n}\n';
       return content;
     };
 
