@@ -133,7 +133,7 @@ Here some examples about how to use this library to configure policies
 
 ### Policy allowing Lambda Function to access bucket objects and list buckets
 
-Define a custom policy to enable a lambda function to access objects on S3 and list buckets
+Define a custom policy to enable a lambda function to access objects on S3 and list buckets:
 
 ```javascript
 import {Effect} from '@aws-cdk/aws-iam';
@@ -161,6 +161,8 @@ export class CdkLambdaFunctionStack extends cdk.Stack {
   }
 }
 ```
+
+Full example available [here](https://github.com/aletheia/iam-policy-generator/tree/master/examples/cdk-lambda-function)
 
 ## License
 
