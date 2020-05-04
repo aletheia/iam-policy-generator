@@ -41,7 +41,9 @@ export class PolicyFactory {
   }
 
   addResources(resources: string[]) {
-    this.resources.concat(resources);
+    resources.forEach(resource => {
+      this.addResource(resource);
+    });
     return this;
   }
 
@@ -51,7 +53,9 @@ export class PolicyFactory {
   }
 
   addActions(actions: string[]) {
-    this.actions.concat(actions);
+    actions.forEach(action => {
+      this.addAction(action);
+    });
     return this;
   }
 
