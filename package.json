@@ -49,11 +49,11 @@
     "@types/lodash.toupper": "^4.1.6",
     "@types/node": "^13.13.4",
     "@types/node-fetch": "^2.5.7",
-    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jest": "^23.9.0",
     "gts": "^2.0.0",
-    "jest": "^25.5.4",
+    "jest": "^26.0.0",
     "ts-jest": "^25.4.0",
-    "ts-node": "^8.9.1",
+    "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   }
 }
