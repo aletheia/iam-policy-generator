@@ -17,7 +17,7 @@
     "generate": "npx ts-node ./src/generator/PolicyGenerator.ts && npm run fix",
     "prepare": "npm run compile",
     "postinstall": "npm run compile && node ./lib/generator/PolicyGenerator.js; tsc ./lib/generated/*.ts",
-    "prepublish": "npm run clean && npm run check && npm run compile"
+    "prepublish": "npm run clean && npm run compile"
   },
   "author": {
     "name": "Luca Bianchi",
