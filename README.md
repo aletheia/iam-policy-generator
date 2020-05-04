@@ -136,25 +136,33 @@ Here some examples about how to use this library to configure policies
 Define a custom policy to enable a lambda function to access objects on S3 and list buckets
 
 ```javascript
-const {Function, Runtime} = require('@aws-cdk/aws-lambda');
-const {PolicyStatementFactory, Action} = require('iam-policy-generator');
-const {Bucket} = require('@aws-cdk/aws-s3');
+export class CdkLambdaFunctionStack extends cdk.Stack {
+  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
 
-const storageBucket = new Bucket(this, 'storageBucket', {
-  bucketName: 'my-bucket-name',
-});
+    const exampleBucket = new Bucket(this, 'exampleBucket', {
+      bucketName: 'aws-iam-example-bucket',
+    });
 
-const myFunction = new Function(this, 'my-function', {
-  // function properties
-});
+    const exampleFunction = new NodejsFunction(this, 'exampleFunction', {
+      entry: resolve(__dirname, '../lambda/example-function/index.ts'),
+      runtime: Runtime.NODEJS_12_X,
+      handler: 'index.handler',
+    });
 
-myFunction.addToRolePolicy(
-  new PolicyStatementFactory()
-    .effect(Effect.ALLOW)
-    .addResource(storageBucket.bucketArn)
-    .actions([Action.S3.PUT_OBJECT, Action.S3.LIST_BUCKET])
-    .build()
-);
+    exampleFunction.addToRolePolicy(
+      new PolicyStatementFactory()
+        .setEffect(Effect.ALLOW)
+        .addResource(exampleBucket.bucketArn)
+        .addActions([
+          Action.S3.LIST_BUCKET,
+          Action.S3.PUT_OBJECT,
+          Action.S3.GET_OBJECT,
+        ])
+        .build()
+    );
+  }
+}
 ```
 
 ## License
