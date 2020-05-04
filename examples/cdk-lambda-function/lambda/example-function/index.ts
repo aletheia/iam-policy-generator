@@ -5,4 +5,4 @@ const hanlder = (event: JSON) => {
   };
 };
 
-export {hanlder};
+export {handler};
