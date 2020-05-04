@@ -136,6 +136,7 @@ Here some examples about how to use this library to configure policies
 Define a custom policy to enable a lambda function to access objects on S3 and list buckets
 
 ```javascript
+import {Effect} from '@aws-cdk/aws-iam';
 import {PolicyStatementFactory, Action} from 'iam-policy-generator';
 
 export class CdkLambdaFunctionStack extends cdk.Stack {
