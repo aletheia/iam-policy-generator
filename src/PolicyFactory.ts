@@ -10,9 +10,9 @@ export interface PolicyFactoryProps {
 }
 
 export class PolicyFactory {
-  protected effect?: string;
-  protected resources?: string[];
-  protected actions?: string[];
+  protected effect: string;
+  protected resources: string[];
+  protected actions: string[];
 
   constructor(props?: PolicyFactoryProps) {
     this.effect = Effect.ALLOW;
