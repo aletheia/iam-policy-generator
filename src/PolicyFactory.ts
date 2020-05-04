@@ -10,19 +10,21 @@ export interface PolicyFactoryProps {
 }
 
 export class PolicyFactory {
-  protected effect: string;
-  protected resources: string[];
-  protected actions: string[];
+  protected effect?: string;
+  protected resources?: string[];
+  protected actions?: string[];
 
-  constructor(props: PolicyFactoryProps) {
-    const {effect, resources, actions} = props;
-    this.effect = effect ? effect : Effect.ALLOW;
-    this.resources = resources || [];
-    this.actions = [];
-    if (actions) {
-      actions.forEach(action => {
-        this.addAction(action);
-      });
+  constructor(props?: PolicyFactoryProps) {
+    if (props) {
+      const {effect, resources, actions} = props;
+      this.effect = effect ? effect : Effect.ALLOW;
+      this.resources = resources || [];
+      this.actions = [];
+      if (actions) {
+        actions.forEach(action => {
+          this.addAction(action);
+        });
+      }
     }
   }
 
