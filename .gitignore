@@ -160,5 +160,6 @@ Temporary Items
 # Project specific folders
 #src/generated/**/*.*
 #!src/generated/.keepme
-./lib
 *.js
+lib
+!examples/**/lib
