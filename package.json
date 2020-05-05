@@ -40,6 +40,9 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "@aws-cdk/aws-lambda": "^1.36.1",
+    "@aws-cdk/aws-lambda-nodejs": "^1.36.1",
+    "@aws-cdk/aws-s3": "^1.36.1",
     "@types/jest": "^25.2.1",
     "@types/lodash.camelcase": "^4.3.6",
     "@types/lodash.capitalize": "^4.2.6",
@@ -49,11 +52,15 @@
     "@types/lodash.toupper": "^4.1.6",
     "@types/node": "^13.13.4",
     "@types/node-fetch": "^2.5.7",
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
     "eslint-plugin-jest": "^23.8.2",
     "gts": "^2.0.0",
     "jest": "^25.5.4",
+    "jsdom": "^15.2.1",
     "ts-jest": "^25.4.0",
     "ts-node": "^8.9.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "utf-8-validate": "^5.0.2"
   }
 }
