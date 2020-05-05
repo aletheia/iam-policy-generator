@@ -1,8 +1,8 @@
-const hanlder = (event: JSON) => {
+const handler = (event: JSON) => {
   return {
     statusCode: 200,
     message: `Hello World. Received ${JSON.stringify(event)}`,
   };
 };
 
-export {hanlder};
+export {handler};
