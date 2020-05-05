@@ -59,6 +59,7 @@
     "@types/node-fetch": "^2.5.7",
     "bufferutil": "^4.0.1",
     "canvas": "^2.6.1",
+    "codecov": "^3.6.5",
     "eslint-plugin-jest": "^23.9.0",
     "gts": "^2.0.0",
     "jest": "25.5.4",
