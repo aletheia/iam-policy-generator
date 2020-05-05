@@ -1,5 +1,5 @@
 import * as path from 'path';
-import {PolicyStatementFactory, Action} from '../index';
+import {PolicyStatementFactory, Action} from '../../src/index';
 import * as cdk from '@aws-cdk/core';
 import * as iam from '@aws-cdk/aws-iam';
 import * as lambda from '@aws-cdk/aws-lambda';
@@ -19,7 +19,7 @@ test('README example should work =)', () => {
       const exampleFunction = new NodejsFunction(this, 'exampleFunction', {
         entry: path.resolve(
           __dirname,
-          '../../examples/cdk-lambda-function/lambda/example-function/index.ts'
+          '../cdk-lambda-function/lambda/example-function/index.ts'
         ),
         runtime: lambda.Runtime.NODEJS_12_X,
         handler: 'index.handler',

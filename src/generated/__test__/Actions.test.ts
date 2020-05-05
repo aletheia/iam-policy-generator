@@ -1,4 +1,4 @@
-import {Action} from '../index';
+import {Action} from '../../index';
 
 test('common actions exist', () => {
   const actions = [
