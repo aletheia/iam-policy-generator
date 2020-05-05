@@ -161,3 +161,4 @@ Temporary Items
 #src/generated/**/*.*
 #!src/generated/.keepme
 ./lib
+*.js
