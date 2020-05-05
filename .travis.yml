@@ -3,7 +3,8 @@ language: node_js
 node_js:
   - '10'
 
-  scripts:
+scripts:
   - npm install codecov -g
+
 after_success:
   - codecov
