@@ -73,12 +73,12 @@ The easiest way to use this library is to instantiate a factory object with prop
 
 ```javascript
 const factory = new PolicyStatementFactory({
-  effect: Effect.ALLOW | Effect.DENY,
+  effect: "Allow" | "Deny",
   resources: [
     /** an array of resource arns **/
   ],
   actions: [
-    /** an array of strings coming from Action.<SERVICE>.<API> **/
+    /** an array of strings from Action.<SERVICE>.<API> **/
   ],
 });
 
@@ -95,12 +95,13 @@ const factory = new PolicyStatementFactory({
   resources: ['*'],
   actions: [Action.S3.PUT_OBJECT, Action.S3.LIST_BUCKET],
 });
-factory.setEffect(Effect.ALLOW | Effect.DENY);
+
+factory.setEffect("Allow" | "Deny");
+
 factory.addResource(/** a resource arn **/);
 factory.addResources(/** an array of resource arns **/);
 
-factory.addAction(/** an action string coming from Action.<SERVICE>.<API> **/);
-factory.addAction(/** an action **/);
+factory.addAction(/** an action from Action.<SERVICE>.<API> **/);
 
 factory.addActions([
   /** an array of actions **/
@@ -115,12 +116,12 @@ Factory methods support chaining, so a cleaner usage would be
 
 ```javascript
 const statement = new PolicyStatement()
-  .setEffect()
+  .setEffect("Allow")
   .addResource(/** a resource arn **/)
   .addResources([
     /** an array of resource arns **/
   ])
-  .addAction(/** an action string coming from Action.<SERVICE>.<API> **/)
+  .addAction(/** an action from Action.<SERVICE>.<API> **/)
   .addActions([
     /** an array of actions **/
   ])
@@ -136,24 +137,29 @@ Here some examples about how to use this library to configure policies
 Define a custom policy to enable a lambda function to access objects on S3 and list buckets:
 
 ```javascript
-import {Effect} from '@aws-cdk/aws-iam';
+import * as path from 'path';
+import * as cdk from '@aws-cdk/core';
+import * as iam from '@aws-cdk/aws-iam';
+import * as s3 from '@aws-cdk/aws-s3';
+import * as lambda from '@aws-cdk/aws-lambda';
+import {NodejsFunction} from '@aws-cdk/aws-lambda-nodejs';
 import {PolicyStatementFactory, Action} from 'iam-policy-generator';
 
 export class CdkLambdaFunctionStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const exampleBucket = new Bucket(this, 'exampleBucket');
+    const exampleBucket = new s3.Bucket(this, 'exampleBucket');
 
     const exampleFunction = new NodejsFunction(this, 'exampleFunction', {
-      entry: resolve(__dirname, '../lambda/example-function/index.ts'),
-      runtime: Runtime.NODEJS_12_X,
+      entry: path.resolve(__dirname, '../lambda/example-function/index.ts'),
+      runtime: lambda.Runtime.NODEJS_12_X,
       handler: 'index.handler',
     });
 
     exampleFunction.addToRolePolicy(
       new PolicyStatementFactory()
-        .setEffect(Effect.ALLOW)
+        .setEffect(iam.Effect.ALLOW)
         .addResource(exampleBucket.bucketArn)
         .addActions([Action.S3.LIST_BUCKET, Action.S3.PUT_OBJECT])
         .build()
