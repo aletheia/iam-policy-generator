@@ -136,14 +136,22 @@ Here some examples about how to use this library to configure policies
 Define a custom policy to enable a lambda function to access objects on S3 and list buckets:
 
 ```javascript
-import {Effect} from '@aws-cdk/aws-iam';
+import {resolve} from 'path';
+import * as cdk from '@aws-cdk/core';
+import {Runtime} from '@aws-cdk/aws-lambda';
+import {NodejsFunction} from '@aws-cdk/aws-lambda-nodejs';
+
 import {PolicyStatementFactory, Action} from 'iam-policy-generator';
+import {Bucket} from '@aws-cdk/aws-s3';
+import {Effect} from '@aws-cdk/aws-iam';
 
 export class CdkLambdaFunctionStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const exampleBucket = new Bucket(this, 'exampleBucket');
+    const exampleBucket = new Bucket(this, 'exampleBucket', {
+      bucketName: 'aws-iam-example-bucket',
+    });
 
     const exampleFunction = new NodejsFunction(this, 'exampleFunction', {
       entry: resolve(__dirname, '../lambda/example-function/index.ts'),
@@ -155,7 +163,11 @@ export class CdkLambdaFunctionStack extends cdk.Stack {
       new PolicyStatementFactory()
         .setEffect(Effect.ALLOW)
         .addResource(exampleBucket.bucketArn)
-        .addActions([Action.S3.LIST_BUCKET, Action.S3.PUT_OBJECT])
+        .addActions([
+          Action.S3.LIST_BUCKET,
+          Action.S3.PUT_OBJECT,
+          Action.S3.GET_OBJECT,
+        ])
         .build()
     );
   }
