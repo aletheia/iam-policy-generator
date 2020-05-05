@@ -3,7 +3,8 @@
   "compilerOptions": {
     "rootDir": "./src",
     "esModuleInterop": true,
-    "outDir": "lib"
+    "outDir": "lib",
+    "sourceMap": true
   },
   "include": ["src/**/*"],
   "exclude": [
