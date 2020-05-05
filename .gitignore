@@ -116,7 +116,6 @@ dist
 .pnp.*
 
 # output dir
-lib/
 
 #VSCode ignore
 .vscode/*
@@ -161,3 +160,4 @@ Temporary Items
 # Project specific folders
 #src/generated/**/*.*
 #!src/generated/.keepme
+./lib
