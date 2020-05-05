@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/iam-policy-generator.svg)](https://badge.fury.io/js/iam-policy-generator)
 [![Build Status](https://travis-ci.com/aletheia/iam-policy-generator.svg?branch=master)](https://travis-ci.com/aletheia/iam-policy-generator)
+[![codecov](https://codecov.io/gh/aletheia/iam-policy-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/aletheia/iam-policy-generator)
 ![David](https://img.shields.io/david/aletheia/iam-policy-generator)
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
@@ -73,7 +74,7 @@ The easiest way to use this library is to instantiate a factory object with prop
 
 ```javascript
 const factory = new PolicyStatementFactory({
-  effect: "Allow" | "Deny",
+  effect: 'Allow' | 'Deny',
   resources: [
     /** an array of resource arns **/
   ],
@@ -96,7 +97,7 @@ const factory = new PolicyStatementFactory({
   actions: [Action.S3.PUT_OBJECT, Action.S3.LIST_BUCKET],
 });
 
-factory.setEffect("Allow" | "Deny");
+factory.setEffect('Allow' | 'Deny');
 
 factory.addResource(/** a resource arn **/);
 factory.addResources(/** an array of resource arns **/);
@@ -116,7 +117,7 @@ Factory methods support chaining, so a cleaner usage would be
 
 ```javascript
 const statement = new PolicyStatement()
-  .setEffect("Allow")
+  .setEffect('Allow')
   .addResource(/** a resource arn **/)
   .addResources([
     /** an array of resource arns **/
@@ -137,7 +138,6 @@ Here some examples about how to use this library to configure policies
 Define a custom policy to enable a lambda function to access objects on S3 and list buckets:
 
 ```javascript
-
 import * as path from 'path';
 import * as cdk from '@aws-cdk/core';
 import * as iam from '@aws-cdk/aws-iam';
@@ -151,7 +151,6 @@ import {Effect} from '@aws-cdk/aws-iam';
 export class CdkLambdaFunctionStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
 
     const exampleBucket = new s3.Bucket(this, 'exampleBucket');
 
