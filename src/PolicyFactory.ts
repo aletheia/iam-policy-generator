@@ -1,3 +1,5 @@
+import * as Action from './generated/Actions';
+
 export enum Effect {
   ALLOW = 'Allow',
   DENY = 'Deny',
@@ -23,9 +25,7 @@ export class PolicyFactory {
       this.effect = effect ? effect : this.effect;
       this.resources = resources ? resources : this.resources;
       if (actions) {
-        actions.forEach(action => {
-          this.addAction(action);
-        });
+        this.addActions(actions);
       }
     }
   }
@@ -47,15 +47,29 @@ export class PolicyFactory {
     return this;
   }
 
+  private isValidAction(action: string) {
+    return Object.values(Action).find(service => {
+      return Object.values(service).find(a => a === action);
+    });
+  }
+
   addAction(action: string) {
+    if (this.isValidAction(action)) {
+      return this.addActionRaw(action);
+    }
+    throw new Error(
+      `Invalid action: "${action}".` +
+        'If you need to include a wildcard, please use factory.addActionRaw(action).'
+    );
+  }
+
+  addActionRaw(action: string) {
     this.actions.push(action);
     return this;
   }
 
   addActions(actions: string[]) {
-    actions.forEach(action => {
-      this.addAction(action);
-    });
+    actions.forEach(action => this.addAction(action));
     return this;
   }
 
