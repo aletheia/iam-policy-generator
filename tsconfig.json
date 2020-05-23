@@ -9,6 +9,7 @@
   "include": ["src/**/*"],
   "exclude": [
     "node_modules",
+    "**/*.js",
     "**/*.test.ts",
     "__test__/**/*.test.ts",
     "examples/**/*"
