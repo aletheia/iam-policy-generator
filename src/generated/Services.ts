@@ -1,3 +1,8 @@
+export const version = {
+  version: '2020-05-23T22:33:21.558Z',
+  hash: '0a66aac46233ed01539d2f071a4c74e3',
+};
+
 export enum Service {
   COMPREHEND = 'comprehend',
   ELASTIC_FILE_SYSTEM = 'elasticfilesystem',
@@ -29,7 +34,7 @@ export enum Service {
   SIMPLEDB = 'sdb',
   SECURITY_TOKEN_SERVICE = 'sts',
   ELEMENTAL_MEDIAPACKAGE = 'mediapackage',
-  MANAGED_APACHE_CASSANDRA_SERVICE = 'cassandra',
+  KEYSPACES_FOR_APACHE_CASSANDRA = 'cassandra',
   ATHENA = 'athena',
   MARKETPLACE_METERING_SERVICE = 'aws-marketplace',
   MARKETPLACE_PROCUREMENT_SYSTEMS_INTEGRATION = 'aws-marketplace',
@@ -65,7 +70,7 @@ export enum Service {
   CONFIG = 'config',
   RDS = 'rds',
   SIMPLE_WORKFLOW_SERVICE = 'swf',
-  MACIE = 'macie',
+  MACIE_CLASSIC = 'macie',
   APPSYNC = 'appsync',
   CERTIFICATE_MANAGER = 'acm',
   XRAY = 'xray',
@@ -79,6 +84,7 @@ export enum Service {
   CODESTAR_NOTIFICATIONS = 'codestar-notifications',
   FRAUD_DETECTOR = 'frauddetector',
   WORKLINK = 'worklink',
+  CODESTAR_CONNECTIONS = 'codestar-connections',
   WORKSPACES = 'workspaces',
   CHIME = 'chime',
   ELASTICACHE = 'elasticache',
@@ -169,6 +175,7 @@ export enum Service {
   CLOUDFORMATION = 'cloudformation',
   WORKMAIL_MESSAGE_FLOW = 'workmailmessageflow',
   CHATBOT = 'chatbot',
+  MACIE = 'macie2',
   HEALTH_APIS_AND_NOTIFICATIONS = 'health',
   OUTPOSTS = 'outposts',
   GAMELIFT = 'gamelift',
