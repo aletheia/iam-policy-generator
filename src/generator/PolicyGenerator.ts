@@ -8,6 +8,7 @@ import snakeCase = require('lodash.snakecase');
 import capitalize = require('lodash.capitalize');
 import replace = require('lodash.replace');
 import fetch from 'node-fetch';
+import {createHash} from 'crypto';
 
 const POLICY_URL = 'https://awspolicygen.s3.amazonaws.com/js/policies.js';
 const POLICY_JSON = resolve(__dirname, '../generated/policies.json');
@@ -34,6 +35,8 @@ interface AWSServicePolicy {
 export class PolicyGenerator {
   logger: Logger;
   policyJson?: AWSPolicyJson;
+  policyVersion?: string;
+  policyHash?: string;
 
   constructor(logger: Logger) {
     this.logger = logger;
@@ -48,10 +51,23 @@ export class PolicyGenerator {
     );
     const policyJson = JSON.parse(policyJsonString);
 
-    this.logger.info('Saving policy file.');
-    writeFileSync(POLICY_JSON, JSON.stringify(policyJson, null, 4));
+    if (policyJson) {
+      this.logger.info('Saving policy file.');
+      const policyFile = JSON.stringify(policyJson, null, 4);
+      writeFileSync(POLICY_JSON, policyFile);
 
-    this.policyJson = policyJson;
+      this.policyJson = policyJson;
+      this.policyHash = this.calcPolicyHash(policyJson);
+      this.policyVersion = new Date().toISOString();
+    } else {
+      logger.error('Policy saving error.');
+    }
+  }
+
+  calcPolicyHash(policyJson: AWSPolicyJson) {
+    const policyFileToHAsh = JSON.stringify(policyJson, null, 0);
+    const policyHash = createHash('md5').update(policyFileToHAsh).digest('hex');
+    return policyHash;
   }
 
   parseServiceName(serviceName: string): ServiceName {
@@ -63,12 +79,21 @@ export class PolicyGenerator {
     return {plain, upperCamelCase, screamingSnakeCase};
   }
 
+  generateFileHeader() {
+    let header = 'export const version = {\n';
+    header += `version: '${this.policyVersion}', \n`;
+    header += `hash: '${this.policyHash}', \n`;
+    header += '} \n\n';
+    return header;
+  }
+
   generateContent(
     contentGeneratorLoop: Function,
     contentHeader = '',
     contentFooter = ''
   ) {
     let content = '';
+    content += this.generateFileHeader();
     content += contentHeader;
 
     foreach(

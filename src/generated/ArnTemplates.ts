@@ -1,3 +1,8 @@
+export const version = {
+  version: '2020-05-23T22:33:21.558Z',
+  hash: '0a66aac46233ed01539d2f071a4c74e3',
+};
+
 export enum ServiceArnTemplates {
   COMPREHEND = 'undefined',
   ELASTIC_FILE_SYSTEM = 'undefined',
@@ -29,7 +34,7 @@ export enum ServiceArnTemplates {
   SIMPLEDB = 'undefined',
   SECURITY_TOKEN_SERVICE = 'undefined',
   ELEMENTAL_MEDIAPACKAGE = 'undefined',
-  MANAGED_APACHE_CASSANDRA_SERVICE = 'undefined',
+  KEYSPACES_FOR_APACHE_CASSANDRA = 'undefined',
   ATHENA = 'undefined',
   MARKETPLACE_METERING_SERVICE = 'undefined',
   MARKETPLACE_PROCUREMENT_SYSTEMS_INTEGRATION = 'undefined',
@@ -65,7 +70,7 @@ export enum ServiceArnTemplates {
   CONFIG = 'undefined',
   RDS = 'undefined',
   SIMPLE_WORKFLOW_SERVICE = 'undefined',
-  MACIE = 'undefined',
+  MACIE_CLASSIC = 'undefined',
   APPSYNC = 'undefined',
   CERTIFICATE_MANAGER = 'undefined',
   XRAY = 'undefined',
@@ -79,6 +84,7 @@ export enum ServiceArnTemplates {
   CODESTAR_NOTIFICATIONS = 'undefined',
   FRAUD_DETECTOR = 'undefined',
   WORKLINK = 'undefined',
+  CODESTAR_CONNECTIONS = 'undefined',
   WORKSPACES = 'undefined',
   CHIME = 'undefined',
   ELASTICACHE = 'undefined',
@@ -169,6 +175,7 @@ export enum ServiceArnTemplates {
   CLOUDFORMATION = 'undefined',
   WORKMAIL_MESSAGE_FLOW = 'undefined',
   CHATBOT = 'undefined',
+  MACIE = 'undefined',
   HEALTH_APIS_AND_NOTIFICATIONS = 'undefined',
   OUTPOSTS = 'undefined',
   GAMELIFT = 'undefined',
