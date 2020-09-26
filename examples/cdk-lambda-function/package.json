@@ -11,23 +11,23 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.36.1",
-    "@types/jest": "^25.2.1",
-    "@types/node": "13.13.4",
-    "aws-cdk": "1.36.1",
-    "jest": "^25.5.4",
+    "@aws-cdk/assert": "1.64.1",
+    "@types/jest": "^26.0.14",
+    "@types/node": "14.11.2",
+    "aws-cdk": "1.64.1",
+    "jest": "^26.4.2",
     "parcel-bundler": "^1.12.4",
-    "ts-jest": "^25.4.0",
-    "ts-node": "^8.10.1",
-    "typescript": "~3.8.3"
+    "ts-jest": "^26.4.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~4.0.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-iam": "^1.36.1",
-    "@aws-cdk/aws-lambda": "^1.36.1",
-    "@aws-cdk/aws-lambda-nodejs": "^1.36.1",
-    "@aws-cdk/aws-s3": "^1.36.1",
-    "@aws-cdk/core": "1.36.1",
-    "iam-policy-generator": "^1.1.0",
+    "@aws-cdk/aws-iam": "^1.64.1",
+    "@aws-cdk/aws-lambda": "^1.64.1",
+    "@aws-cdk/aws-lambda-nodejs": "^1.64.1",
+    "@aws-cdk/aws-s3": "^1.64.1",
+    "@aws-cdk/core": "1.64.1",
+    "iam-policy-generator": "^1.2.0",
     "source-map-support": "^0.5.19"
   }
 }

@@ -7,7 +7,6 @@ test('common actions exist', () => {
     Action.EC2.DESCRIBE_IMAGES,
     Action.EC2_AUTO_SCALING.ATTACH_INSTANCES,
     Action.KINESIS.PUT_RECORD,
-    Action.ATHENA.RUN_QUERY,
     Action.LAMBDA.INVOKE_FUNCTION,
     Action.STEP_FUNCTIONS.START_EXECUTION,
     Action.API_GATEWAY.INVOKE,
