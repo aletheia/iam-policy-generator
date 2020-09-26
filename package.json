@@ -1,6 +1,6 @@
 {
   "name": "iam-policy-generator",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A simple library to be used to generate IAM policies.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
