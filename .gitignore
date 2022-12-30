@@ -163,3 +163,8 @@ Temporary Items
 *.js
 lib
 !examples/**/lib
+
+!.eslintrc.js
+!.prettierrc.js
+!.prettierrc
+!.prettierignore

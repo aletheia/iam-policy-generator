@@ -1,17 +1,27 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
-  "compilerOptions": {
-    "rootDir": "./src",
-    "esModuleInterop": true,
-    "outDir": "lib",
-    "sourceMap": true
-  },
-  "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "**/*.js",
-    "**/*.test.ts",
-    "__test__/**/*.test.ts",
-    "examples/**/*"
-  ]
+	"compilerOptions": {
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"target": "ES2022",
+		"lib": ["ES2022"],
+		"moduleResolution": "node",
+		"declaration": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": false,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"experimentalDecorators": true,
+		"strictPropertyInitialization": false,
+		"skipLibCheck": true,
+		"typeRoots": ["./node_modules/@types"]
+	},
+	"include": ["src/**/*.ts", "!**/*.d.ts"],
+	"exclude": ["./node_modules", "**/*.d.ts"]
 }
